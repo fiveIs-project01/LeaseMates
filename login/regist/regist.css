@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pretendard;
+}
+
+#signup{
+    height: 649px;
+    margin: 40px 430px;
+}
+
+form{
+    background-color: #F5F3FF;
+    height: 600px; 
+    padding: 20px 40px; 
+}
+
+h1{
+    color: #8976FD;
+    margin: 0 0 15px 0;
+}
+
+h3{
+    color: #332C5C;
+    font-weight: 500;
+}
+
+#signup--inner{
+    margin: 15px 20px 10px 40px;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    margin: 0 0 5px 0;
+}
+
+#id,
+#password,
+#check,
+#name,
+#phone-number{
+    padding: 10px;
+    width: 492px;
+    margin: 0 0 5px 0;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#email,
+#email-com{
+    padding: 10px;
+    width: 223px;
+    margin: 0 0 10px 0;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: #737373;
+    font-weight: 500;
+}
+
+#year,
+#month,
+#day{
+    padding: 10px;
+    width: 100px;
+    background-attachment: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+#month{
+    margin: 0 105px;
+}
+
+select{
+    color: #737373;
+    font-weight: 500;
+}
+
+#signup--button{
+    margin: 10px 250px;
+    padding: 10px;
+    width: 100px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+}
+
+a{
+    font-size: 18px;
+    color: #979797;
+    font-weight: 600;
+    text-decoration: none;
+}
+

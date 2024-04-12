@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaseMate 커뮤니티 글 작성 페이지</title>
+  <link rel="stylesheet" href="./create.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script defer src="../../../temp/footer/footer.js"></script>
+  <script defer src="../../../temp/header/header_login.js"></script>
+</head>
+<body>
+    <!-- 헤더 들어갈자리 -->
+    <div id="header-login-placeholder"></div>
+
+  <main>
+    <div class="create-container">
+        <div class="create-title">
+            <span class="material-symbols-outlined">
+            send
+            </span>
+            <span>게시물 작성</span>
+        </div>
+        <div class="create-textarea-box">
+            <div class="create-textarea">
+                <span class="material-symbols-outlined">
+                groups
+                </span>
+                <span>커뮤니티</span>
+            </div>
+            <input type="text" class="create-textarea-title" placeholder="제목을 입력해주세요." />
+            <textarea type="text" class="create-textarea-content" rows="4" cols="50"
+            placeholder="토픽에 맞지 않는 글로 다른 유저로부터 일정 수 이상의 신고를 받는 경우 관리자 권한으로 게시물이 삭제될 수 있습니다. 
+불특정 다수에게 불쾌한 감정을 유발하는 게시물 작성 시, 관리자 권한으로 게시물 삭제 및 차단조치할 수 있습니다."></textarea>
+            <div class="create-file">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <input type="file">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="create-button">
+        
+        <a href="#"><button class="create-list-button">목록으로</button></a>
+        <a href="#"><button class="create-submit-button">등록하기</button></a>
+        </div>
+    </div>
+  </main>
+  <!-- footer 들어갈 자리 -->
+  <div id="footer-placeholder"></div>
+</body>
+</html>

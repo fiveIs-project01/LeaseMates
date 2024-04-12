@@ -1,0 +1,279 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: "Pretendard";
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.outer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.inner {
+  width: 1000px;
+}
+
+a {text-decoration: none;}
+
+input:focus {outline: none;}
+
+/* -------------------------------------------- */
+/* header : start */
+/* -------------------------------------------- */
+
+header .outer {
+  position: fixed;
+  z-index: 100;
+
+  border-bottom: 1px solid #CACACA;
+}
+
+header .inner {
+  /* background-color: red; */
+  height:60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--left,
+.header--right {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.header--left .e {
+  margin-right: 30px;
+}
+
+.header--right .e {
+  margin-left: 15px;
+}
+
+
+.header--left-logo {
+  /* font-family: "Bebas Neue"; */
+  color:#8976FD;
+  font-weight: bold;
+  font-size:25px;
+}
+
+.header--left-community,
+.header--left-barter,
+.header--left-sharehouse {
+  color: #332C5C;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header--left-community:hover,
+.header--left-barter:hover,
+.header--left-sharehouse:hover {
+  color:#8976FD;
+}
+
+.header--right-search {
+  width: 200px;
+  height: 30px;
+
+  position: relative;
+
+  border: 1px solid #8976FD;
+  border-radius: 50px;
+}
+
+.header--right-search span {
+  color:#8976FD;
+  margin-left:7px;
+  line-height: 31px;
+
+  cursor: pointer;
+}
+
+.header--right-search input {
+  position: absolute;
+  top:25%;
+  right:10px;
+
+  height:15px;
+  width:150px;
+
+  border:0;
+}
+
+.header--right-login,
+.header--right-signup {
+  height:30px;
+  line-height: 30px;
+  padding: 0 20px;
+  border:1px solid #8976FD;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header--right-login {
+  background-color: #8976FD;
+  color: #FFFFFF;
+}
+
+.header--right-signup {
+  color: #332C5C;
+}
+
+/* -------------------------------------------- */
+/* header : end */
+/* -------------------------------------------- */
+
+main {
+  height:1000px;
+  background-color: #FFFFFF;
+}
+
+.note-Barter{
+  padding-top: 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.note--Barter{
+  width: 100%;
+}
+
+.note-Barter h2{
+  margin-top: 60px;
+  font-size: 30px;
+  color: #332C5C;
+}
+.main-click{
+  margin-top: 30px;
+  
+}
+
+.main-click a{
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.click-barter{
+  color: #8976FD;
+}
+.click-home{
+  color: #332C5C;
+}
+
+  .click-barter:hover,
+  .click-home:hover{
+  color:#8976FD;
+  }
+  .note-table{
+    border: 1px solid #CACACA;
+    border-radius: 10px;
+    padding: 30px 5px;
+    margin-top: 20px;
+  }
+  main ul{
+    list-style: none;
+  }
+  .note--table{
+    display: flex;
+    border-bottom: #CACACA 1px solid;
+    padding-bottom: 5px;
+    color: #6E6E6E;
+  }
+  main ul ul li{
+    font-size: 20px;
+  }
+  .note-table-id{
+    width: 150px;
+  }
+  .note-table-name{
+    width: 150px;
+  }
+  .note-table-content{
+    flex: 1;
+  }
+  .note-table-time{
+    width: 200px;
+  }
+
+  .note-note{
+    display: flex;
+    border-bottom: #CACACA 1px solid;
+    padding-bottom: 5px;
+    color: #6E6E6E;
+    margin-top: 5px;
+  }
+
+  main .note-note-content a{
+    font-size: 20px;
+    color: #6E6E6E;
+  }
+
+  .note-note-id{
+    width: 150px;
+  }
+  .note-note-name{
+    width: 150px;
+  }
+  .note-note-content{
+    flex: 1;
+    
+  }
+  .note-note-time{
+    width: 200px;
+  }
+
+  .main-button{
+    margin-top: 30px;
+  
+  }
+
+  .main-button a{
+    font-size: 20px;
+    color: #6E6E6E;
+  }
+  .main-button .no2{
+    color: #8976FD;
+  }
+
+  .main-button a:hover{
+    color: #8976FD;
+  }
+  
+/* -------------------------------------------- */
+/* footer : start */
+/* -------------------------------------------- */
+footer .outer {
+  border-top: 1px solid #CACACA;
+}
+
+footer .inner {
+  height:50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer span {
+  display: block;
+  margin:0 5px;
+
+  font: #6E6E6E;
+}
+
+/* -------------------------------------------- */
+/* footer : end */
+/* -------------------------------------------- */
