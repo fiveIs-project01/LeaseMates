@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaseMate</title>
+  <link rel="stylesheet" href="./edit.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script defer src="../../../temp/footer/footer.js"></script>
+  <script defer src="../../../temp/header/header_login.js"></script>
+</head>
+<body>
+  <!-- 헤더 들어갈자리 -->
+  <div id="header-login-placeholder"></div>
+  <main>
+    <div class="edit-container">
+      <div class="edit-title">
+        <img src="" alt="">
+        <p class="edit-title-font">게시글 수정</p>
+      </div>
+      <div class="form-container">
+        <div><p id="form-topic">커뮤니티</p></div>
+        <form id="postForm">
+          <div class="form-group">
+            <input type="text" id="title" name="title" placeholder="제목을 입력해주세요"required>
+          </div>
+          <div class="form-group">
+            <textarea id="content" name="content" placeholder="토픽에 맞지 않는 글로 판단되어 다른 유저로부터 일정 수 이상의 신고를 받는 경우 관리자 권한으로 게시물이 삭제될 수 있습니다. 불특정 다수에게 불쾌한 감정을 유발하는 게시물 작성 시, 관리자 권한으로 게시물 삭제 및 차단조치할 수 있습니다." required></textarea>
+          </div>
+            <div class="edit-upload-button">
+                <label for="chooseFile"><img src="../img/attach-img.png" width="20"/></label>
+                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+            </div>
+            <div class="edit-submit-buttons">
+              <input class="edit-sub-btn1 .reg" type="submit" value="수정완료">
+              <button  class="edit-sub-btn1" >목록으로</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!-- footer 들어갈 자리 -->
+  <div id="footer-placeholder"></div>
+</body>
+</html>

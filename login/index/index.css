@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: pretendard;
+}
+
+
+#login{
+    height: 649px;
+    margin: 40px 430px;
+}
+
+form{
+    background-color: #F5F3FF;
+    height: 500px; 
+    padding: 80px 90px 60px 90px; 
+}
+
+h1{
+    color: #8976FD;
+    margin: 0 0 55px 0;
+}
+
+fieldset{
+    border: none;
+}
+
+#id,
+#password{
+    padding: 12px;
+    width: 469px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    color: #979797;
+    font-weight: 500;
+}
+
+#password{
+    margin: 0 0 90px 0;
+}
+
+.login--button{
+    width: 495px;
+    padding: 12px 50px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #979797;
+    font-weight: 500;
+}

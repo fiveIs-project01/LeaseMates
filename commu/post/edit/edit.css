@@ -1,0 +1,283 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: "Pretendard";
+  font-size: 10px;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.outer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner {
+  width: 1000px;
+}
+
+a {text-decoration: none;}
+
+input:focus {outline: none;}
+
+/* -------------------------------------------- */
+/* header : start */
+/* -------------------------------------------- */
+
+header .outer {
+  position: fixed;
+  z-index: 100;
+
+  border-bottom: 1px solid #CACACA;
+}
+
+header .inner {
+  /* background-color: red; */
+  height:60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--left,
+.header--right {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+}
+
+.header--left .e {
+  margin-right: 30px;
+}
+
+.header--right .e {
+  margin-left: 15px;
+}
+
+
+.header--left-logo {
+  /* font-family: "Bebas Neue"; */
+  color:#8976FD;
+  font-weight: bold;
+  font-size:25px;
+}
+
+.header--left-community,
+.header--left-barter,
+.header--left-sharehouse {
+  color: #332C5C;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header--left-community {
+  color:#8976FD;
+}
+
+.header--left-barter:hover,
+.header--left-sharehouse:hover {
+  color:#8976FD;
+}
+
+.header--right-search {
+  width: 200px;
+  height: 30px;
+
+  position: relative;
+
+  border: 1px solid #8976FD;
+  border-radius: 50px;
+}
+
+.header--right-search span {
+  color:#8976FD;
+  margin-left:7px;
+  line-height: 31px;
+
+  cursor: pointer;
+}
+
+.header--right-search input {
+  position: absolute;
+  top:25%;
+  right:10px;
+
+  height:15px;
+  width:150px;
+
+  border:0;
+}
+
+.header--right-login,
+.header--right-signup {
+  height:30px;
+  line-height: 30px;
+  padding: 0 20px;
+  border:1px solid #8976FD;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.header--right-login {
+  background-color: #8976FD;
+  color: #FFFFFF;
+}
+
+.header--right-signup {
+  color: #332C5C;
+}
+
+  /* ---유저 로그인--- */
+  .header--right-user{
+    height:30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border:1px solid #8976FD;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: #8976FD;
+    margin-left: 30px;
+  }
+
+/* -------------------------------------------- */
+/* header : end */
+/* -------------------------------------------- */
+
+main {
+  height: 850px;
+  background-color: #FFFFFF;
+  border: 0.01px solid beige;
+}
+
+/* -------------------------------------------- */
+/* footer : start */
+/* -------------------------------------------- */
+footer .outer {
+  border-top: 1px solid #CACACA;
+}
+
+footer .inner {
+  height:50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer span {
+  display: block;
+  margin:0 5px;
+
+  font: #6E6E6E;
+}
+
+/* -------------------------------------------- */
+/* footer : end */
+/* -------------------------------------------- */
+
+/* 게시글 */
+.form-container {
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 10px;
+
+}
+.form-group {
+  margin-bottom: 20px;
+  width: 895px;
+  border: none;
+}
+
+.form-group input{
+  width: 889px;
+  height: 40px;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #8876fd18;
+  border: none;
+
+}
+.form-group textarea {
+  width: 878px;
+  height: 300px;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+}
+
+.form-group input[type="submit"] {
+  padding: 10px 20px;
+  background-color:#8976FD;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+.title-write{
+  margin-top: 100px;
+}
+.edit-container{
+  border: 1px solid black;
+  margin-top: 130px;
+  flex-direction: column;
+  align-items: center;
+  height: 800px;
+  border: none;
+}
+.edit-title{
+  display: flex;
+  justify-content: center;
+  padding:10px;
+}
+
+#postForm{
+  align-items: center;
+  font-size: 20px;
+}
+
+.edit-title-font{
+  font-size: 27px;
+  font-weight: 600;
+}
+#form-topic{
+  font-size: 18px;
+  padding: 20px;
+  color: #8976FD;
+}
+#chooseFile {
+  visibility: hidden;
+}
+.edit-upload-button{
+  padding: 4px;
+}
+.edit-submit-buttons{
+	text-align: center;
+}
+.edit-sub-btn1{
+  width: 180px; 
+  font-size: 15px;
+  display :inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: 0.5px  #8976FD;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.reg{
+  color: #8976FD;
+}
