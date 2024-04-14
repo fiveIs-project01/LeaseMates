@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeaseMate</title>
-  <script src="../js/detail.js"></script>
+
+  <script src="detail.js"></script>
+  <script src="detail_cmt.js"></script>
+
   <link rel="stylesheet" href="./detail.css">
   <link rel="stylesheet" href="./detail_cmt.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
   <script defer src="../../../temp/header/header_login.js"></script>
   <script defer src="../../../temp/footer/footer.js"></script>
+
+  <script defer src="../../../temp/header/header_login.js"> </script>
+  <script defer src="../../../temp/footer/footer.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
   <!-- 헤더 들어갈자리 -->
@@ -50,24 +62,26 @@
           </div>
         </div>
         <div class="board-comment-container">
-          <ul class="comment">
-            <li class="comment-form">
-              <p>댓글<span></span></p>
-              <form class="comment-frm" name="commentFrm">
-                <span class="ps_box">
-                  <input type="text" placeholder="댓글을 남겨주세요." class="int" name="comment-content"/>
-                </span>
-                <button type="submit" class="comment-btn" value="등록">등록</button>
-
-              </form>
-            </li>
-            <li id="comment-list">
-              
-            </li>
-          </ul>
+            <p class="comment-p">댓글</p>
+            <form id="comment-form" onsubmit=addComment(event)>
+              <input type="text" placeholder="댓글 달기..." id="commentInput">
+              <button id="submit">게시</button>
+            </form>
+            <div class="comments">
+            </div>
+       
+             
+          </div>
         </div>
+
       </div>
     </div>
+
+  </div>
+
+
+
+  </div>
   </main>
   <!-- footer 들어갈 자리 -->
   <div id="footer-placeholder"></div>
