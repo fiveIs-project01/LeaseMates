@@ -12,38 +12,43 @@
   </head>
 <body>
     <!-- 헤더 들어갈자리 -->
-  <div id="header-login-placeholder"></div>
-      <main>
-        <div class="outer">
-            <div class="inner">
-                <div class="Nickname">
-                    <img src="../../../img/user/pw/human.webp" alt="#" class="user-photo">
-                    <div class="user-email">asd123@gmail.com</div>
-                    <button class="user-button">프로필 수정</button>
-                </div>
-
-                <div class="Pagebotton">
-                    <a href="#"><div class="main--profile">프로필</div></a>
-                    <a href="#"><div class="maim--post">작성게시글</div></a>
-                    <a href="#"><div class="maim--comment">작성댓글</div></a>
-                    <a href="#"><div class="maim--change">내 정보변경</div></a>
-                    <a href="#"><div class="maim--pwdchang">비밀번호 변경</div></a>
-                    <a href="#"><div class="maim--note">쪽지함</div></a>
-                </div>
-                
-                <div class ="secret-page">
-                  <p>비밀번호를 변경하시려면 기존 비밀번호와 새 비밀번호를 입력해주세요</p>
-                  <div class="secret-page-input">
-                    <input type="password" placeholder="기존 비밀번호">
-                    <input type="password" id="newpassword" placeholder="새 비밀번호">
-                    <input type="password" id="checkpassword" placeholder="새 비빌먼호 확인">
+    <div id="header-login-placeholder"></div>
+    <main>
+          <div class="outer">
+              <div class="inner">
+                  <div class="Nickname">
+                      <div class="user-name">홍길동 님 페이지</div>
                   </div>
-                  <button>비밀번호 변경</button>
-                </div>
-            </div>
-        </div>
-      </main>
-      <!-- footer 들어갈 자리 -->
+  
+                  <div class="Pagebotton">
+                      <a href="../../index/index.html"><div class="main--profile">프로필</div></a>
+                      <a href="#"><div class="maim--post">작성게시글</div></a>
+                      <a href="../info_change/info_change.html"><div class="maim--change">내 정보변경</div></a>
+                      <a href="pw.html"><div class="maim--pwdchang">비밀번호 변경</div></a>
+                      <a href="#"><div class="maim--note">쪽지함</div></a>
+                  </div>
+                  
+                  <div class ="secret-page">
+                    <p>비밀번호를 변경하시려면 기존 비밀번호와 새 비밀번호를 입력해주세요</p>
+                    <form class="secret-page-input">
+                      <input id="oldpwd" type="password" class="pw" placeholder="기존 비밀번호">
+                      <input id="pwd" type="password" class="pw" id="newpassword" placeholder="새 비밀번호">
+  
+                      <div class="strongPassword hide">8글자 이상, 영문, 숫자, 특수문자 필수</div>
+                     
+                      <input id="pwdck" type="password" class="pw" id="checkpassword" placeholder="새 비빌먼호 확인">
+                      
+                      <div class="missmatch-message hide">비밀번호가 일치하지 않습니다</div>
+                      <!-- <input type="button" onclick="test()" value="비밀번호 변경" id="pwchange" /> -->
+                      <!-- <div class="check hide">모두 입력하셔야합니다</div> -->
+                    </form>
+                    <form>
+                      <button id="pwdbutton"type="button">비밀번호 변경</button>
+                    </form>
+                  </div>
+              </div>
+          </div>
+        </main>
       <div id="footer-placeholder"></div>
-</body>
-</html>
+  </body>
+  </html>

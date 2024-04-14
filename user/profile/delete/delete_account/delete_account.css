@@ -188,6 +188,14 @@ main{
     display: flex;
     justify-content: center;
 }
+
+/* 패스워드 공간 */
+.delete-pwd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .enter-pw, .check-pw{
   padding-left: 10px;
   padding-top: 5px;
@@ -201,7 +209,7 @@ main{
 }
 
 .double-check-pw{
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   /* center */
   display: flex;
   justify-content: center;
@@ -249,6 +257,12 @@ main{
   font-weight: 600;
   border-radius: 5px;
   border: 0.8px solid #8976FD;
+}
+
+/* js */
+.hide{
+  visibility: hidden;
+  /* display: none; */
 }
 
 /* -------------------------------------------- */
