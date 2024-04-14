@@ -185,12 +185,32 @@ footer span {
 /* 게시글 */
 .form-container {
   max-width: 900px;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   border: 1px solid black;
   border-radius: 10px;
 
 }
+
+.material-symbols-outlined {
+  color: #CACACA;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#edit-category{
+  font-size: 20px;
+  color: #8976FD;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
 .form-group {
   margin-bottom: 20px;
   width: 895px;
@@ -226,6 +246,13 @@ footer span {
 .form-group input[type="submit"]:hover {
   background-color: #0056b3;
 }
+
+#edit-file{
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+}
+
 .title-write{
   margin-top: 100px;
 }
@@ -257,27 +284,32 @@ footer span {
   padding: 20px;
   color: #8976FD;
 }
-#chooseFile {
-  visibility: hidden;
-}
-.edit-upload-button{
-  padding: 4px;
-}
+
 .edit-submit-buttons{
 	text-align: center;
 }
-.edit-sub-btn1{
+.edit-sub-btn1,
+.edit-sub-btn2{
   width: 180px; 
   font-size: 15px;
   display :inline-block;
   padding: 10px 20px;
-  color: black;
-  border: 0.5px  #8976FD;
   cursor: pointer;
   border-radius: 5px;
   margin: 10px;
 }
 
-.reg{
-  color: #8976FD;
+.edit-sub-btn1{
+  color: #332C5C;
+  border: 0.5px solid #8976FD;
+  background-color: #FFFFFF;
 }
+
+.edit-sub-btn2{
+  color: #ffffff;
+  border: 0.5px solid #8976FD;
+  background-color: #8976FD;
+}
+
+
+

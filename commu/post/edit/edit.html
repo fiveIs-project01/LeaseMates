@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script defer src="../../../temp/footer/footer.js"></script>
   <script defer src="../../../temp/header/header_login.js"></script>
+  <script defer src="./edit.js"></script>
 </head>
 <body>
   <!-- 헤더 들어갈자리 -->
@@ -19,22 +20,25 @@
         <p class="edit-title-font">게시글 수정</p>
       </div>
       <div class="form-container">
-        <div><p id="form-topic">커뮤니티</p></div>
+        <div>
+          <span class="material-symbols-outlined">
+            groups
+          </span>
+          <span id="edit-category">커뮤니티</span>
+        </div>
         <form id="postForm">
           <div class="form-group">
-            <input type="text" id="title" name="title" placeholder="제목을 입력해주세요"required>
+            <input type="text" id="title" name="title" placeholder="제목을 입력해주세요" />
           </div>
           <div class="form-group">
-            <textarea id="content" name="content" placeholder="토픽에 맞지 않는 글로 판단되어 다른 유저로부터 일정 수 이상의 신고를 받는 경우 관리자 권한으로 게시물이 삭제될 수 있습니다. 불특정 다수에게 불쾌한 감정을 유발하는 게시물 작성 시, 관리자 권한으로 게시물 삭제 및 차단조치할 수 있습니다." required></textarea>
+            <textarea id="content" name="content" placeholder="토픽에 맞지 않는 글로 판단되어 다른 유저로부터 일정 수 이상의 신고를 받는 경우 관리자 권한으로 게시물이 삭제될 수 있습니다. 불특정 다수에게 불쾌한 감정을 유발하는 게시물 작성 시, 관리자 권한으로 게시물 삭제 및 차단조치할 수 있습니다." ></textarea>
           </div>
-            <div class="edit-upload-button">
-                <label for="chooseFile"><img src="../img/attach-img.png" width="20"/></label>
-                <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
-            </div>
-            <div class="edit-submit-buttons">
-              <input class="edit-sub-btn1 .reg" type="submit" value="수정완료">
-              <button  class="edit-sub-btn1" >목록으로</button>
-            </div>
+          <input type="file" id="edit-file" name="edit-file" />
+          <div class="edit-submit-buttons">
+            <input class="edit-sub-btn1" type="submit" value="수정완료">
+            <input  type="button" class="edit-sub-btn2" value="목록으로" onclick="location.href='/commu/index/after/after.html'" />
+          </div>
+          <div id="error-message" style="color: red; margin-top: 5px; font-size: 16px;"></div>
         </form>
       </div>
     </div>

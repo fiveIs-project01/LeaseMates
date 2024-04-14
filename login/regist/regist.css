@@ -4,15 +4,16 @@
     font-family: pretendard;
 }
 
-#signup{
+#signup-container{
     height: 649px;
     margin: 40px 430px;
+
+    background-color: #F5F3FF;
 }
 
 form{
-    background-color: #F5F3FF;
-    height: 600px; 
-    padding: 20px 40px; 
+    height: 500px;
+    padding: 70px 40px 30px 40px;
 }
 
 h1{
@@ -25,12 +26,20 @@ h3{
     font-weight: 500;
 }
 
-#signup--inner{
-    margin: 15px 20px 10px 40px;
+h1,h3{
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+
+#signup-wrap{
+    margin: 20px 10px 0 10px;
 }
 
 fieldset{
     border: none;
+    margin-top: 20px;
 }
 
 legend{
@@ -39,9 +48,10 @@ legend{
 
 #id,
 #password,
-#check,
+#password-retype,
 #name,
-#phone-number{
+#phone-number,
+#address{
     padding: 10px;
     width: 492px;
     margin: 0 0 5px 0;
@@ -50,53 +60,32 @@ legend{
     border-radius: 10px;
 }
 
-#email,
-#email-com{
-    padding: 10px;
-    width: 223px;
-    margin: 0 0 10px 0;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 10px;
-}
 
 input::placeholder{
     color: #737373;
     font-weight: 500;
 }
 
-#year,
-#month,
-#day{
-    padding: 10px;
-    width: 100px;
-    background-attachment: #ffffff;
-    border: none;
-    border-radius: 10px;
-}
-
-#month{
-    margin: 0 105px;
-}
-
-select{
-    color: #737373;
-    font-weight: 500;
-}
-
 #signup--button{
-    margin: 10px 250px;
+    margin: 10px 210px;
     padding: 10px;
     width: 100px;
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
-}
 
-a{
     font-size: 18px;
     color: #979797;
     font-weight: 600;
     text-decoration: none;
 }
 
+.hide {
+    display: none;
+}
+
+main > div {
+    color: #8976FD;
+    font-size: 14px;
+    padding: 0px 30px 0px 30px;
+  }
