@@ -4,21 +4,26 @@
     font-family: pretendard;
 }
 
-
-#login{
+#index-container{
     height: 649px;
     margin: 40px 430px;
+
+    background-color: #F5F3FF;
 }
 
 form{
-    background-color: #F5F3FF;
     height: 500px; 
-    padding: 80px 90px 60px 90px; 
+    padding: 90px 50px 60px 50px;
+    margin: 30px;
 }
 
 h1{
     color: #8976FD;
     margin: 0 0 55px 0;
+
+    position: relative;
+    top: 70px;
+    left: 50px;
 }
 
 fieldset{
@@ -30,11 +35,13 @@ fieldset{
     padding: 12px;
     width: 469px;
     font-size: 20px;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
     border: none;
     background-color: #ffffff;
     border-radius: 10px;
 }
+
+
 
 input::placeholder{
     color: #979797;
@@ -42,21 +49,26 @@ input::placeholder{
 }
 
 #password{
-    margin: 0 0 90px 0;
+    margin-top: 5px;
 }
 
-.login--button{
+
+.login--button,
+.signup--button,
+.find-pw--button{
     width: 495px;
     padding: 12px 50px;
     font-size: 20px;
     margin: 0 0 20px 0;
     border: none;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #8976FD;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
 }
 
-a{
-    text-decoration: none;
-    color: #979797;
-    font-weight: 500;
+.login--button{
+    margin-top: 80px;
 }

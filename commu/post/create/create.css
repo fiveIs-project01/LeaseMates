@@ -216,7 +216,7 @@
     'opsz' 24
   }
 
-  .create-textarea-title{
+  #create-textarea-title{
     width: 960px;
     height: 30px;
     background-color: #f5f3ff;
@@ -225,12 +225,12 @@
     padding: 10px 0 10px 40px;
   }
 
-  .create-textarea-title::placeholder{
+  #create-textarea-title::placeholder{
     font-size: 15px;
     color: #CACACA;
   }
 
-  .create-textarea-content{
+  #create-textarea-content{
     margin: 20px 40px 0;
     
     width: 895px;
@@ -240,7 +240,7 @@
     
   }
 
-  .create-textarea-content::placeholder{
+  #create-textarea-content::placeholder{
     font-size: 15px;
     color: #CACACA;
     font-weight: 500;
@@ -250,7 +250,7 @@
   }
 
   .create-file{
-    margin-left: 910px;
+    margin-left: 30px;
   }
 
   .create-file ul{
@@ -269,11 +269,19 @@
   }
 
   .create-button{
-    margin: 0 200px;
+    margin: 70px 200px;
+  }
+
+  #create-submit-button{
+    border: none;
+    background-color: #FFFFFF;
+    color: #332C5C;
+    border: 1px solid #8976FD;
+    margin: 0 20px 0 10px;
   }
 
   .create-list-button,
-  .create-submit-button{
+  #create-submit-button{
     width: 170px;
     height: 50px;
 
@@ -293,14 +301,6 @@
     color: #FFFFFF;
     border: none;
   }
-
-  .create-submit-button{
-    background-color: #FFFFFF;
-    color: #332C5C;
-    border: 1px solid #8976FD;
-    margin: 0 0 0 10px;
-  }
-
 
   /* -------------------------------------------- */
   /* footer : start */

@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaseMates login 페이지</title>
+    <title>LeaseMates</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script defer src="./index.js"></script>
 </head>
 <body>
     <main>
-        <div id="login">
+        <div id="index-container">
+            <h1>로그인</h1>
             <form>
-                <h1>Login</h1>
-                    <fieldset>
-                        <input type="text" id="id" placeholder="ID" required />
-                    </fieldset>
-                    <fieldset>
-                        <input type="password" id="password" placeholder="Password" required/>
-                    </fieldset>
-                    <button class="login--button"><a href="#">Login</a></button>
-                    <br>
-                    <button class="login--button"><a href="#">Sign up</a></button>
-                    <br>
-                    <button class="login--button"><a href="#">Manager Login</a></button>
+                <fieldset>
+                    <input type="text" id="id" placeholder="아이디" required/>
+                    <p id="idResult"></p>
+                </fieldset>
+                <fieldset>
+                    <input type="password" id="password" placeholder="비밀번호" required/>
+                    <p id="pwResult"></p>
+                </fieldset>
+                <input type="button" class="login--button" onclick="login();" value="로그인"/>
+                <br>
+                <button class="signup--button">회원가입</button>
+                <br>
+                <button class="find-pw--button">비밀번호 찾기</button>
             </form>
         </div>
     </main>
