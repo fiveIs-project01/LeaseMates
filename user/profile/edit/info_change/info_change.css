@@ -149,7 +149,7 @@ main {
 }
 
 .info-change{
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -159,7 +159,7 @@ main {
   object-fit: fill;
 }
 .user-email{
-  margin: 50px;
+  margin: 20px;
   font-size: 20px;
   border: 1 solid;
 }
@@ -172,17 +172,18 @@ main {
   padding: 10px 20px;
   border-radius: 10px;
 }
+
+
+.info-change-button{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .main--profile:hover, .maim--post:hover, .maim--comment:hover,
 .maim--change:hover, .maim--pwdchang:hover, .maim--note:hover{
   color:#8976FD;
   border-bottom: #8976FD solid 1px;
-}
-
-
-.Pagebotton{
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .main--profile, .maim--post, .maim--comment,
@@ -222,7 +223,7 @@ main input{
 }
 
 .user-profile{
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 .user-profile th, td{
   border-right: 20px solid white;
@@ -240,17 +241,22 @@ main input{
 .chang-delete{
   padding-top: 30px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 
-main .chang-delete a{
-  padding-left: 180px;
+.delete-button{
   font-size: 15px;
-  color: red;
+  color: white;
+  border: 0;
+  background-color: #DB4455;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  margin-left: 80px;
 }
 
-main .chang-delete button{
+.chang-button{
   font-size: 15px;
   color: white;
   border: 0;
@@ -258,6 +264,8 @@ main .chang-delete button{
   border-radius: 10px;
   width: 150px;
   height: 50px;
+  position: relative;
+  left: 60%;
 }
 
 /* -------------------------------------------- */

@@ -9,6 +9,7 @@
   <!-- header 에러남 -->
   <!-- <script defer src="../../../../temp/header/header_login.js"></script>
   <script defer src="../../../../temp/footer/footer.js"></script> -->
+  <script defer src="delete_account.js"></script>
 </head>
 <body> 
   <!-- 헤더 들어갈자리 -->
@@ -19,12 +20,15 @@
         <div class="delete-container">
           <p class="delete-theme">회원탈퇴</p>
           <p class="delete-ment">회원탈퇴를 원하시면 비밀번호를 입력하세요</p>
-          <div class="first-check-pw"><input class="enter-pw"type="password" placeholder="비밀번호"></div>
-          <div class="double-check-pw"><input class="check-pw" type="password" placeholder="비밀번호 확인"></div>
+          <form class="delete-pwd">
+            <div class="first-check-pw"><input class="enter-pw"type="password" placeholder="비밀번호"></div>
+            <div class="double-check-pw"><input class="check-pw" type="password" placeholder="비밀번호 확인"></div>
+            <div class="missmatch-message hide">비밀번호 확인해주세요</div>
+          </form>
           <p class= "last-chance">정말 회원탈퇴하시겠습니까? 이 작업은 복구할 수 없습니다</p>
           <div class="delete-btn-container">
-            <button type="button" class="list-btn">목록으로</button>
-            <button type="button" class="last-btn">탈퇴하기🥵</button>
+            <button type="button" class="list-btn" onclick="back()">뒤로가기</button>
+            <button type="button" class="last-btn" onclick="pwdcheck()">탈퇴하기</button>
           </div>
         </div>
       </div>
