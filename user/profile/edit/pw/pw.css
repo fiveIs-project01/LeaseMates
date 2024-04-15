@@ -256,6 +256,9 @@ margin-left: 30px;
     font-size: 16px;
     padding-left: 20px;
   }
+  #oldpwd{
+    margin-bottom: 20px;
+  }
 
   /* .secret-page #pwchange{
     font-size: 20px;
