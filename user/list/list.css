@@ -240,7 +240,9 @@ main {
   /* margin-top: 10px; */
   /* margin-left: 350px; */
 }
-
+.title{
+  color:#6E6E6E
+}
 
 
 /* .horizontal-line02 {
@@ -271,7 +273,7 @@ main {
   font-size: 13pt;
   width: 80%;
   /* padding-right: 10px; */
-  /* padding-left: 30px; */
+  padding-left: 10px;
 }
 .date{
   font-size: 13pt;
@@ -283,8 +285,11 @@ main {
 .horizontal-line{
   border-top: 1px solid #979797; 
 }
+ul{
+  list-style: none;
+}
 
-.delete_button {
+/* .delete_button {
   background-color: #FFFFFF;
   color: #8976FD;
   padding: 10px 20px;
@@ -296,21 +301,31 @@ main {
   font-weight: 600;
   margin-left: 150px;
   margin-top: 100px;
-}
-.button_container a{
-  padding-left: 20px;
-  font-size: 13pt;
-  color: #979797;
-  margin-left: 15px;
-  margin-top: 100px;
-  padding: 10px 20px;
-}
-.layer_tab{
-  margin-top: 110px;
-}
+} */
+
+
+
 .button_container{
   display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
 }
+.button_container a{
+  font-size: 13pt;
+  margin: 0px 5px 0px;
+  color: #979797;
+}
+.number-button{
+  font-size: 13pt;
+  margin: 0px 5px 0px;
+  color: #979797;
+}
+
+/* .layer_tab{
+  margin-top: 50px; */
+/* } */
+
 /* -------------------------------------------- */
 /* footer : start */
 /* -------------------------------------------- */

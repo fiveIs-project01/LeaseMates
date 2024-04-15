@@ -7,6 +7,9 @@ let elMismatchMessage = document.querySelector('.missmatch-message');
 elMismatchMessage.style.color = "red";
 elMismatchMessage.style.fontSize = "16px";
 
+elStrongPassword.style.color = "red";
+elStrongPassword.style.fontSize = "16px";
+
 // 숫자 다양하게 넣어야하는 js
 function strongPassword (str) {  
     return /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(str);
@@ -41,15 +44,16 @@ elPasswordcheck.onkeyup = function(){
         elMismatchMessage.classList.add('hide');
     }
 }
-// 비밀번호 유효성 js
-elPassword.onkeyup = function(){
-    if(elPasswordcheck.value.length !==0){
-        if(isMatch(elPassword.value, elPasswordcheck.value)){
-            elMismatchMessage.classList.add('hide');
+
+// 오류 메세지
+function pwdcheck(){
+    if(elPasswordcheck.value.length !== 0){
+        if(elPassword.value !== elPasswordcheck.value){
+            alert("비밀번호 확인");
         }else{
-            elMismatchMessage.classList.remove('hide');
+            alert("수정되었습니다!");
+            // 주소로 이동...
+            window.location.href = "http://127.0.0.1:5500/user/profile/edit/pw_success/pw_success.html";
         }
-    }else{
-        elMismatchMessage.classList.add('hide');
     }
 }
