@@ -1,3 +1,9 @@
+
+* {
+  font-family: "Pretendard";
+  font-weight:300;
+}
+
 ul,
 li{
   list-style: none;
@@ -48,12 +54,43 @@ main{
 .card-body{
   width: 990px;
   height: 100px; 
-  border-bottom: 0.5px solid #666;
 }
 
-.card-text{
-  font-size: 20px; 
-  font-weight: 300;
-  letter-spacing: normal;
-  margin-top: 20px;
+.card {
+  padding: 20px 0;
+  border-bottom: 1px solid #CACACA;
+}
+
+.card-username {
+  display: block;
+
+  font-size: 13px;
+  color: #8976FD;
+}
+
+.card textarea {
+  display: block;
+  width: inherit;
+  height:20px;
+  padding: 5px 0;
+  margin: 10px 0;
+  resize: none;     /* textarea 크기조절 불가 */
+
+  background-color: white;
+  border: 0;
+  font-size: 13px;
+  color: #332C5C;
+}    
+
+.card-date {
+  display: block;
+
+  font-size: 10px;
+  color: #6E6E6E;
+}
+
+.card-edit-box {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
