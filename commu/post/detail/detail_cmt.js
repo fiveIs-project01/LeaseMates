@@ -1,5 +1,3 @@
-// 댓글을 저장할 배열
-let comments = [];
 
 // 댓글추가 함수
 function addComment(event) {
