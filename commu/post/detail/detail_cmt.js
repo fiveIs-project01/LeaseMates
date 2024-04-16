@@ -5,27 +5,33 @@ let comments = [];
 function addComment(event) {
     event.preventDefault();
     const commentInput = document.getElementById('commentInput');
-    var commentText = commentInput.value;
-    var date = new Date().toLocaleString();
+    let commentText = commentInput.value;
+    let date = new Date().toLocaleString();
     
-    if(commentText){
+    if(commentText) {
 
-        var commentDiv = document.createElement("div");
+        let commentDiv = document.createElement("div");
         commentDiv.className = "card";
         commentDiv.innerHTML = `
         <div class="card-body">
-        <p class="card-text">${commentText}</p>
-        <p class="card-text"><small class="text-muted">${date}</small></p>
+            <span class="card-username">김이박님</span>
+            <textarea disabled>${commentText}</textarea>
+
+            <div class="card-edit-box">
+                <span class="card-date">${date}</span>
+                <div>
+                    <!-- 수정, 삭제 버튼이 들어감 -->
+                </div>
         </div>
         `;
-        console.log(commentDiv);
+
+        // console.log(commentDiv);
         
-        var commentsDiv = event.target.parentNode.querySelector(".comments");
+        let commentsDiv = event.target.parentNode.querySelector(".comments");
         commentsDiv.insertBefore(commentDiv, commentsDiv.firstChild);
         commentInput.value = "";
-    }else{
+    }
+    else {
         alert("입력값이 없습니다"); 
     }
 }
-
-
