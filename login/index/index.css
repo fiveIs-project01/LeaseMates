@@ -4,11 +4,13 @@
     font-family: pretendard;
 }
 
+
 #index-container{
     height: 649px;
-    margin: 40px 430px;
-
+    width: 680px;
     background-color: #F5F3FF;
+    margin: auto;
+    margin-top: 50px;   
 }
 
 form{
