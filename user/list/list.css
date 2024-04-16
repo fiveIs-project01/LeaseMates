@@ -232,6 +232,9 @@ main {
   /* margin-top: 10px; */
   /* margin-left: 550px; */
 }
+#title-page{
+  width: 790px;
+}
 .topic_date{
   font-size: 13pt;
   color: #8976FD;
@@ -241,7 +244,7 @@ main {
   /* margin-left: 350px; */
 }
 .title{
-  color:#6E6E6E
+  color:#6E6E6E;
 }
 
 

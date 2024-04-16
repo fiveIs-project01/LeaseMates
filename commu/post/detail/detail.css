@@ -274,3 +274,20 @@ footer span {
   padding-top: 3px;
   margin-left: 4px;
 }
+
+/* 게시글 수정, 게시글 삭제 */
+.edit-container{
+  display: flex;
+  justify-content: right;
+}
+.edit-btn{
+  height: 24px;
+  width: 70px;
+  font-size: 13px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid  #8976FD;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
