@@ -168,8 +168,8 @@ main {
 }
 
 .banner-img{
-  width: 1518px;
-  height: 200px;
+  width: 100vw;
+  height: 240px;
 
   position: relative;
   top: 60px;
