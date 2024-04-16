@@ -1,0 +1,115 @@
+
+* {
+  font-family: "Pretendard";
+  font-weight:300;
+}
+
+ul,
+li{
+  list-style: none;
+}
+
+#commentInput{
+  height: 100px;
+  width: 900px;
+  border:  0.2px solid black;
+  margin: 0;
+  font-size: 15px;
+  padding-left: 10px;
+  font-weight: 300;
+  border-right: none;
+}
+
+#submit{
+  height: 100px;
+  margin: 0;
+  width: 80px;
+  font-size: 15px;;
+  color: #ffff;
+  background-color: #8976FD;
+  border: none;
+}
+
+main{
+  height: 2000px;
+}
+
+.comment-p{
+  font-size:17px !important;
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+}
+
+.board-comment-container{
+  width: 1000px;
+  height: max-content;
+}
+
+#comment-form {
+  padding-bottom: 50px;
+  border-bottom: 0.2px solid #666;
+}
+
+.card-body{
+  width: 990px;
+  height: 100px; 
+}
+
+.card {
+  padding: 20px 0;
+  border-bottom: 1px solid #CACACA;
+}
+
+.card-username {
+  display: block;
+
+  font-size: 13px;
+  color: #8976FD;
+}
+
+.card textarea {
+  display: block;
+  width: inherit;
+  height:20px;
+  padding: 5px 0;
+  margin: 10px 0;
+  resize: none;     /* textarea 크기조절 불가 */
+
+  background-color: white;
+  border: 0;
+  font-size: 13px;
+  color: #332C5C;
+}    
+
+.card-date {
+  display: block;
+
+  font-size: 10px;
+  color: #6E6E6E;
+}
+
+.card-edit-box {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.card button {
+  padding: 3px 5px;
+
+  border: 1px solid #8976FD;
+  background-color: white;
+  color: #332C5C;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.card-complete_update-btn {
+  display: none;
+}
+
+.card button:hover {
+  color: #FFF;
+  background-color: #8976FD;
+}
