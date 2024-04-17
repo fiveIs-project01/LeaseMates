@@ -9,6 +9,8 @@
   <script defer src="../../../temp/footer/footer.js"></script>
   <script defer src="../../../temp/header/header_login.js"></script>
   <script defer src="./edit.js"></script>
+  <!-- 게시글 상세 페이지에서 제목, 내용 불러오는 js -->
+  <script defer src="./detail.js"></script>
 </head>
 <body>
   <!-- 헤더 들어갈자리 -->
@@ -26,7 +28,7 @@
           </span>
           <span id="edit-category">커뮤니티</span>
         </div>
-        <form id="postForm">
+        <form id="postForm" onsubmit="submitEdit(event)">
           <div class="form-group">
             <input type="text" id="title" name="title" placeholder="제목을 입력해주세요" />
           </div>
