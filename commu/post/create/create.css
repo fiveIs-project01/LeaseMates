@@ -157,8 +157,8 @@
   }
 
   .create-container{
-    padding: 110px 0 0 0;
-    margin: 0 265px;
+    padding-top: 100px;
+    margin: auto;
   }
 
   .create-title{
@@ -190,7 +190,8 @@
     width: 1000px;
     height: 400px;
 
-    margin: 30px 0 300px 0;
+    margin: auto;
+    margin-top: 30px;
   }
 
   .create-textarea{
@@ -221,7 +222,7 @@
     height: 30px;
     background-color: #f5f3ff;
     border: none;
-
+    font-size: 15px;
     padding: 10px 0 10px 40px;
   }
 
@@ -238,6 +239,7 @@
 
     border: none;
     
+    font-size: 15px;
   }
 
   #create-textarea-content::placeholder{
