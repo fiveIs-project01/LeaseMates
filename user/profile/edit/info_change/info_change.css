@@ -132,6 +132,19 @@ header .inner {
   color: #332C5C;
 }
 
+ /* ---유저 로그인--- */
+ .header--right-user{
+  height:30px;
+  line-height: 30px;
+  padding: 0 20px;
+  border:1px solid #8976FD;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #8976FD;
+  margin-left: 30px;
+}
+
 /* -------------------------------------------- */
 /* header : end */
 /* -------------------------------------------- */

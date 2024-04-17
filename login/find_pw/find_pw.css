@@ -7,7 +7,10 @@
 
 #find-pw-container{
     height: 649px;
-    margin: 40px 430px;
+    width: 680px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #ffffff;
 }
 
 .find-pw-wrap{
