@@ -30,7 +30,7 @@ function loadPostContent() {
   var postContent = "중동 관련 지정학적 위험이 주가지수에 영향을 미쳤다. 이란이 시리아의 이란 영사관 폭격의 배후로 이스라엘을 지목한 데 이어 강한 보복을 예고하면서다. 이스라엘은 이날 모든 전투부대원의 휴가를 중단했다. 또 각 부대에 서한을 보내 “이스라엘군은 전쟁 중이며 병력 전개 문제는 필요할 때마다 지속해서 검토할 것”이라고 강조했다. 전일 이스라엘은 방공시스템 운용 경험이 있는 예비군을 추가로 동원하기로 했다.";
 
   // 가져온 내용을 해당 요소에 넣음
-  document.querySelectorAll(".content-title").value = postTitle;
-  document.querySelectorAll(".board-content").value = postContent;
+  document.getElementById('title').value = postTitle;
+  document.getElementById('content').value = postContent;
 }
 
