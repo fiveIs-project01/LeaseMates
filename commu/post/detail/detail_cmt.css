@@ -9,7 +9,7 @@ li{
   list-style: none;
 }
 
-#commentInput{
+#input_cmt{
   height: 100px;
   width: 900px;
   border:  0.2px solid black;
@@ -30,10 +30,6 @@ li{
   border: none;
 }
 
-main{
-  height: 2000px;
-}
-
 .comment-p{
   font-size:17px !important;
   margin-top: 30px !important;
@@ -45,10 +41,9 @@ main{
   height: max-content;
 }
 
-#comment-form {
+.comment-form {
   padding-bottom: 50px;
   border-bottom: 0.2px solid #666;
-
 }
 
 .card-body{
@@ -93,4 +88,65 @@ main{
   display: flex;
   justify-content:space-between;
   align-items: center;
+}
+
+.card button {
+  padding: 3px 5px;
+
+  border: 1px solid #8976FD;
+  background-color: white;
+  color: #332C5C;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.card-complete_update-btn {
+  display: none;
+}
+
+.card button:hover {
+  color: #FFF;
+  background-color: #8976FD;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+
+  margin: 30px 0 50px 0;
+}
+
+#pagination .page-btn {
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+
+  font-size: 15px;
+  border:1px solid #8976FD;
+  background-color: white;
+
+  cursor: pointer;
+}
+
+#pagination .prev-btn,
+#pagination .next-btn {
+  margin: 0 5px;
+  padding:0 10px;
+
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+
+  font-size: 15px;
+
+  color:#332C5C;
+  background-color: #F5F3FF;
+  border: 1px solid #8976FD;
+
+  cursor: pointer;
 }

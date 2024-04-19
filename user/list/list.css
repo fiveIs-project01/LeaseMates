@@ -36,115 +36,6 @@ a {text-decoration: none;}
 
 input:focus {outline: none;}
 
-/* -------------------------------------------- */
-/* header : start */
-/* -------------------------------------------- */
-.header-placeholder{
-  margin-top: 100px;
-}
-header .outer {
-  position: fixed;
-  z-index: 100;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #CACACA;
-}
-
-header .inner {
-  /* background-color: red; */
-  height:60px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.header--left,
-.header--right {
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
-}
-
-.header--left .e {
-  margin-right: 30px;
-}
-
-.header--right .e {
-  margin-left: 15px;
-}
-
-
-.header--left-logo {
-  /* font-family: "Bebas Neue"; */
-  color:#8976FD;
-  font-weight: bold;
-  font-size:25px;
-}
-
-.header--left-community,
-.header--left-barter,
-.header--left-sharehouse {
-  color: #332C5C;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.header--left-community {
-  color:#8976FD;
-}
-
-.header--left-barter:hover,
-.header--left-sharehouse:hover {
-  color:#8976FD;
-}
-
-.header--right-search {
-  width: 200px;
-  height: 30px;
-
-  position: relative;
-
-  border: 1px solid #8976FD;
-  border-radius: 50px;
-}
-
-.header--right-search span {
-  color:#8976FD;
-  margin-left:7px;
-  line-height: 31px;
-
-  cursor: pointer;
-}
-
-.header--right-search input {
-  position: absolute;
-  top:25%;
-  right:10px;
-
-  height:15px;
-  width:150px;
-
-  border:0;
-}
-
-.header--right-login,
-.header--right-signup {
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.header--right-login {
-  background-color: #8976FD;
-  color: #FFFFFF;
-}
-
-.header--right-signup {
-  color: #332C5C;
-}
-
   /* ---유저 로그인--- */
   .header--right-user{
     height:30px;
@@ -157,24 +48,11 @@ header .inner {
     color: #8976FD;
     margin-left: 30px;
   }
-/* -------------------------------------------- */
-/* header : end */
-/* -------------------------------------------- */
-
 
 main {
-  min-height: 900px; /* 스크롤 없으면 최소 메인의 높이가 900으로   */
-  max-height:100%;  /* 화면이 스크롤까지 이용하면 footer 맨아래*/
-  width: 100%;
-  background-color: #FFFFFF;
-  z-index: 1;
-  position: static;
-  flex:1
-}
-
- main .outer{
   padding-top: 60px;
 }
+
 
 .list-page{
   display: flex;
@@ -182,9 +60,10 @@ main {
 }
 
 .list-box-topic{
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #332C5C;
   padding-bottom: 10px;
 }
+
 .list-topic{
   font-size: 20pt;
   color: #332C5C;
@@ -211,90 +90,73 @@ main {
 }
 
   
-
-
 .topic_date{
   font-size: 13pt;
   color: #8976FD;
   flex: 1;
   text-align: center;
 }
-.title{
-  color:#6E6E6E;
+
+.post_list .title{
+  color: #332C5C;
+  font-size: 15px;
+  margin-left: 10px;
 }
+
+.posting-container {
+  padding:10px 0;
+  border-bottom: 1px solid #979797;
+}
+
 .title-date{
   display: flex;
-  width: 100%;
-  border-bottom: #979797 1px solid;
-  padding: 10px 0px 10px;
-}
-.title{
-  font-size: 13pt;
-  width: 80%;
-  padding-left: 10px;
-}
-.date{
-  font-size: 13pt;
-  flex:1;
-  text-align: center;
-}
-
-ul{
-  list-style: none;
-}
-
-
-
-.button_container{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-.button_container a{
-  font-size: 13pt;
-  margin: 0px 5px 0px;
-  color: #979797;
-}
-.number-button{
-  font-size: 13pt;
-  margin: 0px 5px 0px;
-  color: #979797;
-}
-
-.number-button:hover{
-  color: #8976FD;
-}
-
-/* -------------------------------------------- */
-/* footer : start */
-/* -------------------------------------------- */
-.footer-placeholder{
-  margin-bottom: 100px;
-  position: relative;
-  bottom: 0px;
-}
-footer .outer {
-  border-top: 1px solid #CACACA;
-}
-
-footer .inner {
-  height:50px;
-
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-
-footer span {
-  display: block;
-  margin:0 5px;
-
-  font: #6E6E6E;
+.date{
+  font-size: 15px;
+  padding-right:70px;
 }
 
-/* -------------------------------------------- */
-/* footer : end */
-/* -------------------------------------------- */
+#post_list--pagination {
+  display: flex;
+  justify-content: center;
+
+  margin: 30px 0 50px 0;
+}
+
+#post_list--pagination .page-btn {
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+
+  font-size: 15px;
+  border:1px solid #8976FD;
+  background-color: white;
+  color: #332C5C;
+
+  cursor: pointer;
+}
+
+#post_list--pagination .prev-btn,
+#post_list--pagination .next-btn {
+  margin: 0 5px;
+  padding:0 10px;
+
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+
+  font-size: 15px;
+
+  color:#332C5C;
+  background-color: #F5F3FF;
+  border: 1px solid #8976FD;
+
+  cursor: pointer;
+}

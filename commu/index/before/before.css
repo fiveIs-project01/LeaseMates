@@ -26,177 +26,20 @@ a {text-decoration: none;}
 
 input:focus {outline: none;}
 
-/* -------------------------------------------- */
-/* header : start */
-/* -------------------------------------------- */
-
-header .outer {
-  position: fixed;
-  z-index: 100;
-
-  border-bottom: 1px solid #CACACA;
-}
-
-header .inner {
-  /* background-color: red; */
-  height:60px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.header--left,
-.header--right {
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
-}
-
-.header--left .e {
-  margin-right: 30px;
-}
-
-.header--right .e {
-  margin-left: 15px;
-}
-
-
-.header--left-logo {
-  /* font-family: "Bebas Neue"; */
-  color:#8976FD;
-  font-weight: bold;
-  font-size:25px;
-}
-
-.header--left-community,
-.header--left-barter,
-.header--left-sharehouse {
-  color: #332C5C;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.header--left-barter {
-  color:#8976FD;
-}
-
-.header--left-community:hover,
-.header--left-sharehouse:hover {
-  color:#8976FD;
-}
-
-.header--right-search {
-  width: 200px;
-  height: 30px;
-
-  position: relative;
-
-  border: 1px solid #8976FD;
-  border-radius: 50px;
-}
-
-.header--right-search span {
-  color:#8976FD;
-  margin-left:7px;
-  line-height: 31px;
-
-  cursor: pointer;
-}
-
-.header--right-search input {
-  position: absolute;
-  top:25%;
-  right:10px;
-
-  height:15px;
-  width:150px;
-
-  border:0;
-}
-
-.header--right-login,
-.header--right-signup {
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.header--right-login {
-  background-color: #8976FD;
-  color: #FFFFFF;
-}
-
-.header--right-signup {
-  color: #332C5C;
-}
-
-/* ---유저 로그인--- */
-.header--right-user{
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 10px;
-  color: #8976FD;
-  margin-left: 30px;
-}
-
-/* -------------------------------------------- */
-/* header : end */
-/* -------------------------------------------- */
 
 main {
-  height:1600px;
-  background-color: #FFFFFF;
+  /* 아마 js로 추가해서? main이 top:0; 부터 시작하게 됨. 방지하기 위해 header만큼 공간을 줌 */
+  padding-top: 60px;
 }
 
 /* -------------------------------------------- */
 /* banner : start */
 /* -------------------------------------------- */
 
-.banner-container{
-  width: 1518px;
-  height: 230px;
-
-  display: flex;
-  align-items: center;
-}
-
 .banner-img{
   width: 100vw;
   height: 240px;
-
-  position: relative;
-  top: 60px;
-
   background-color: #C4E4F1;
-}
-
-.banner-wrap{
-  display: flex;
-  list-style-type: none;
-}
-
-.prev,
-.next{
-  position: absolute;
-  font-size: 30px;
-  line-height: 330px;
-  color: white;
-  cursor: pointer;
-}
-
-.prev{
-  left: 25px;
-}
-
-.next{
-  right: 25px;
 }
 
 /* -------------------------------------------- */
@@ -207,19 +50,14 @@ main {
 /* .before-list-container : start */
 /* -------------------------------------------- */
 
-.before-list-container{
-  margin: 100px 300px 0;
-}
-
 .list-category{
   display: flex;
   justify-content: space-between;
-  text-align: center;
 
-  margin: 10px;
+  margin: 30px 0;
 }
 
-.list-category p{
+.list-category p {
   font-size: 20px;
   color: #8976FD;
   font-weight: 500;
@@ -227,7 +65,6 @@ main {
 
 .write--button{
   border: 1px solid #8976FD;
-  
 }
 
 .write--button span{
@@ -251,7 +88,7 @@ font-variation-settings:
 'opsz' 24
 }
 
-.list-title .material-symbols-outlined{
+.post .material-symbols-outlined{
   color: #CACACA;
   padding-left: 10px;
 
@@ -262,16 +99,29 @@ font-variation-settings:
 'opsz' 24
 }
 
-.list-title{
+.post {
   display: flex;
-  text-align: center;
-  margin-bottom: 10px;
-  
+  justify-content: space-between;
+  align-items: center;
+
+  height: 40px;
 }
 
-.list-title p{
-  font-size: 20px;
-  padding: 5px 0 0 10px;
+.post--title {
+  display: flex;
+  justify-content: center;
+}
+
+.post--title-name {
+  display: block;
+  margin-left: 10px;
+  font-size: 18px;
+
+}
+
+.post--title .picture_icon {
+  height: 20px;
+  transform: translateY(-25%);
 }
 
 .like{
@@ -299,51 +149,44 @@ font-variation-settings:
 
 }
 
-.no1{
-  color: #8976FD;
-}
-
-.no1:hover,
-.no2:hover,
-.no3:hover,
-.no4:hover,
-.no5hover,
-.no6:hover,
-.no7:hover,
-.no8:hover,
-.no9:hover,
-.no10:hover{
-color: #8976FD;
-}
-
-
-/* -------------------------------------------- */
-/* .before-list-container : end */
-/* -------------------------------------------- */
-
-/* -------------------------------------------- */
-/* footer : start */
-/* -------------------------------------------- */
-footer .outer {
-  border-top: 1px solid #CACACA;
-}
-
-footer .inner {
-  height:50px;
-
+#post_list--pagination {
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  margin: 30px 0 50px 0;
 }
 
+#post_list--pagination .page-btn {
+  margin: 0 3px;
+  width: 30px;
+  height: 30px;
 
-footer span {
-  display: block;
-  margin:0 5px;
+  line-height: 30px;
+  text-align: center;
 
-  font: #6E6E6E;
+  font-size: 15px;
+  border:1px solid #8976FD;
+  background-color: white;
+  color: #332C5C;
+
+  cursor: pointer;
 }
 
-/* -------------------------------------------- */
-/* footer : end */
-/* -------------------------------------------- */
+#post_list--pagination .prev-btn,
+#post_list--pagination .next-btn {
+  margin: 0 5px;
+  padding:0 10px;
+
+  height: 30px;
+
+  line-height: 30px;
+  text-align: center;
+
+  font-size: 15px;
+
+  color:#332C5C;
+  background-color: #F5F3FF;
+  border: 1px solid #8976FD;
+
+  cursor: pointer;
+}

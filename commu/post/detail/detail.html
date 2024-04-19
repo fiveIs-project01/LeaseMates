@@ -6,17 +6,15 @@
   <title>LeaseMate</title>
 
   <script src="detail_like.js"></script>
-  <script src="detail_cmt.js"></script>
-  <script src="detail_cmt.js"></script>
+  <script type="module" src="detail_cmt.js"></script>
 
   <link rel="stylesheet" href="./detail.css">
   <link rel="stylesheet" href="./detail_cmt.css">
+  <link rel="stylesheet" href="../../../temp/header/header.css">
+  <link rel="stylesheet" href="../../../temp/footer/footer.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
   <script defer src="../../../temp/header/header_login.js"></script>
-  <script defer src="../../../temp/footer/footer.js"></script>
-
-  <script defer src="../../../temp/header/header_login.js"> </script>
   <script defer src="../../../temp/footer/footer.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -29,13 +27,8 @@
   <div id="header-login-placeholder"></div>
 
   <main>
-      <img
-          class="banner-img"
-          src="/img/commu/banner.png"
-          alt=""
-      />
+      <img class="banner-img" src="/img/commu/banner.png" alt=""/>
       
-    </div>
     <div class="outer">
       <div class="inner">
         
@@ -51,16 +44,17 @@
             <img src="../../../img/commu/post/detail/comment-count.png" width="15" alt="댓글수"><p>22</p>
           </div>
         </div>
+
         <div class="board-container">
           <p class="board-content">
             중동 관련 지정학적 위험이 주가지수에 영향을 미쳤다.
 
-이란이 시리아의 이란 영사관 폭격의 배후로 이스라엘을 지목한 데 이어 강한 보복을 예고하면서다.
-이스라엘은 이날 모든 전투부대원의 휴가를 중단했다.
+            이란이 시리아의 이란 영사관 폭격의 배후로 이스라엘을 지목한 데 이어 강한 보복을 예고하면서다.
+            이스라엘은 이날 모든 전투부대원의 휴가를 중단했다.
 
-또 각 부대에 서한을 보내 “이스라엘군은 전쟁 중이며
-병력 전개 문제는 필요할 때마다 지속해서 검토할 것”이라고 강조했다.
-전일 이스라엘은 방공시스템 운용 경험이 있는 예비군을 추가로 동원하기로 했다.
+            또 각 부대에 서한을 보내 “이스라엘군은 전쟁 중이며
+            병력 전개 문제는 필요할 때마다 지속해서 검토할 것”이라고 강조했다.
+            전일 이스라엘은 방공시스템 운용 경험이 있는 예비군을 추가로 동원하기로 했다.
           </p>
           <div class="edit-container">
             <a href="/commu/post/edit/edit.html"><div class="edit-btn">게시글 수정</div></a>
@@ -73,27 +67,22 @@
         </div>
 
         <div class="board-comment-container">
-            <p class="comment-p">댓글</p>
-            <form id="comment-form" onsubmit=addComment(event)>
-              <input type="text" placeholder="댓글 달기..." id="commentInput">
-              <button id="submit">게시</button>
-            </form>
-            <div class="comments">
-            </div>
-       
-             
+          <p class="comment-p">댓글</p>
+
+          <div class="comment-form">
+            <input type="text" placeholder="댓글을 작성해주세요." id="input_cmt">
+            <button id="submit">게시</button>
           </div>
+
+          <div id="comment-content"></div>
+          <div id="pagination"></div>
         </div>
 
       </div>
     </div>
 
-  </div>
-
-
-
-  </div>
   </main>
+
   <!-- footer 들어갈 자리 -->
   <div id="footer-placeholder"></div>
 </body>
