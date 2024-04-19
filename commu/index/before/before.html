@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeaseMates 커뮤니티 메인 페이지</title>
+    <link rel="stylesheet" href="../../../temp/header/header.css">
+    <link rel="stylesheet" href="../../../temp/footer/footer.css">
     <link rel="stylesheet" href="./before.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -14,367 +16,43 @@
 <body> 
     <!-- 헤더 들어갈자리 -->
     <div id="header-placeholder"></div>
+    
     <main>
-        <div class="banner-container">
-            <ul class="banner-wrap">
-                <li>
-                    <img
-                        class="banner-img"
-                        src="/img/commu/banner.png"
-                        alt=""
-                    />
-                </li>
-            </ul>
-        </div>
-        <div class="before-list-container">
-            <div class="list-category">
-                <p>커뮤니티</p>
-                <div class="write--button">
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            edit_square
-                        </span>
-                        <a href="../../post/create/create.html"><span>글쓰기</span></a>
-                    </a></div>
-            </div>
-            <hr>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <a href="../../post/detail/detail.html"><p>아파트 실거래가 조회 방법</p></a>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
+
+        <!-- 배너 -->
+        <section class="banner">
+            <img class="banner-img" src="/img/commu/banner.png" alt=""/>
+        </section>
+
+        <!-- 커뮤니티 게시글 -->
+        <section class="before-list-container">
+            <div class="outer">
+                <div class="inner">
+
+                    <div class="list-category">
+                        <p>커뮤니티</p>
+                        <div class="write--button">
+                            <a href="#">
+                            <span class="material-symbols-outlined">edit_square</span>
+                            <a href="../../post/create/create.html"><span>글쓰기</span></a>
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="post_list">
+                        <div id="post_list--content"></div>
+                        <div id="post_list--pagination"></div>
+                    </div>
+
                 </div>
             </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-title">
-                <span class="material-symbols-outlined">
-                    image
-                    </span>
-                <p>아파트 실거래가 조회 방법</p>
-                <div class="like">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                    </span>
-                    <span class="like-count">2</span>
-                    <span class="material-symbols-outlined">
-                        mode_comment
-                    </span>
-                    <span class="comme-count">2</span>
-                </div>
-            </div>
-            <div class="list-index">
-                <a href="#">&lt</a>
-                <a href="#" class="no1">1</a>
-                <a href="#" class="no2">2</a>
-                <a href="#" class="no3">3</a>
-                <a href="#" class="no4">4</a>
-                <a href="#" class="no5">5</a>
-                <a href="#" class="no6">6</a>
-                <a href="#" class="no7">7</a>
-                <a href="#" class="no8">8</a>
-                <a href="#" class="no9">9</a>
-                <a href="#" class="no10">10</a>
-                <a href="#">&gt</a>
-            </div>
-        </div>
-      </main>
-      <!-- footer 들어갈 자리 -->
-  <div id="footer-placeholder"></div>
+        </section>
+
+    </main>
+
+    <!-- footer 들어갈 자리 -->
+    <div id="footer-placeholder"></div>
 </body>
 </html>

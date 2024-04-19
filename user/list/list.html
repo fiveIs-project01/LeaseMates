@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LeaseMate</title>
   <link rel="stylesheet" href="./list.css">
+  <link rel="stylesheet" href="../../temp/footer/footer.css">
+  <link rel="stylesheet" href="../../temp/header/header.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script defer src="../../../temp/header/header_login.js"></script>
   <script defer src="../../../temp/footer/footer.js"></script>
+
   <script defer src="list.js"></script>
 </head>
 <body>
@@ -17,6 +20,7 @@
   <main>
     <div class="outer">
       <div class="inner">
+
         <div class="list-page">
           <div class="list-box-topic"> 
             <div class="list-topic">내가 작성한 글</div>
@@ -29,30 +33,13 @@
             <div class="topic_date">날짜</div>
           </div>
 
-          <!-- 게시물 목록을 담을 컨테이너 -->
-          <ul id="post-list">
-          <!--
-              <li>
-                <div class="posting-container">
-                  <div class="title-date">
-                    <a href="/commu/post/detail/detail.html"><p class="title" id="title-page" href="../../commu/post/detail/detail.html">집 가는 길</p></a>
-                    <p class="date">24.03.11</p>
-                  </div>
-                </div>
-              </li>
-          -->
-          </ul>
 
-        <div class="button_container">
-          <div class="layer_tab" id="pagination-buttons">
-            <!-- 페이지 버튼이 자동으로 추가될 곳 -->
-            <!-- <div class="layer_tab">
-            <a href="#" class="prev-button">&lt</a>
-            <a href="#" class="number-button-wrapper"><span class="number-button">1</span></a>
-            <a href="#" class="next-button">&gt</a>
-            -->
+          <!-- 게시물 목록을 담을 컨테이너 -->
+          <div class="post_list">
+            <div id="post_list--content"></div>
+            <div id="post_list--pagination"></div>
           </div>
-        </div>
+
       </div>
     </div>
   </main>

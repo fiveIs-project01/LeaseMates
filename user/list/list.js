@@ -1,59 +1,110 @@
-// 페이지당 표시할 게시물 수
-const itemsPerPage = 20;
-// 전체 게시물 수
-const totalItems = 101;
-// 전체 페이지 수
-const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-// 페이지별 게시물 목록을 가져오는 함수
-function getPosts(page) {
-  // 게시물 목록을 비우고 새로운 게시물을 추가하는 코드
-  const postListContainer = document.getElementById('post-list');
-  postListContainer.innerHTML = '';
+const content = document.getElementById('post_list--content');
+const pagination = document.getElementById('post_list--pagination');
 
-  // 해당 페이지의 시작과 끝 인덱스 계산
-  const startIndex = (page - 1) * itemsPerPage;
-  const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
 
-  // 해당 페이지의 게시물을 추가(실제 데이터가 들어갈 부분)
-  for (let i = startIndex; i < endIndex; i++) {
-    postListContainer.innerHTML += `<li>
-                                      <div class="posting-container">
-                                        <div class="title-date">
-                                          <p class="title" id="title-page" href="../../commu/post/detail/detail.html">집 가는 길에 ${i + 1}</p>
-                                          <p class="date">24.04.17</p>
-                                        </div>
-                                      </div>
-                                    </li>`;
-  }
+const BTN_NUM = 5;                    // 페이지당 보여질 페이지네이션 버튼 수
+const ITEM_NUM = 10;                  // 페이지당 항목 수
+
+const items = [];                     // 페이지네이션될 항목 배열
+let currentPage = 1;                  // 현재 페이지 번호
+
+
+// 게시물 생성
+for (let i = 1; i <= 98; i++) {
+  let post = `
+    <div>
+      <div class="posting-container">
+        <div class="title-date">
+        <a href="../../commu/post/detail/detail.html"><p class="title" id="title-page">집 가는 길에 ${i}</p></a>
+          <p class="date">24.04.17</p>
+        </div>
+      </div>
+    </div>
+  `;
+
+  items.push(post);
 }
 
-// 페이지 버튼을 생성하고 이벤트 핸들러를 할당하는 함수
-function setupPagination() {
-  const paginationContainer = document.getElementById('pagination-buttons');
-  // 이전 버튼 추가
-  paginationContainer.innerHTML += `<a href="#" class="prev-button">&lt;</a>`;
-  // 페이지 버튼 추가
-  for (let i = 1; i <= totalPages; i++) {
-    paginationContainer.innerHTML += `<a href="#" class="number-button-wrapper"><span class="number-button">${i}</span></a>`;
-  }
-  // 다음 버튼 추가
-  paginationContainer.innerHTML += `<a href="#" class="next-button">&gt;</a>`;
 
-  // 페이지 버튼에 클릭 이벤트 리스너 추가
-  const pageButtons = document.querySelectorAll('.number-button-wrapper');
-  pageButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const pageNumber = parseInt(button.querySelector('.number-button').textContent);
-      getPosts(pageNumber);
-    });
+function displayItems() {
+const startIndex = (currentPage - 1) * ITEM_NUM;
+const endIndex = startIndex + ITEM_NUM;
+const displayedItems = items.slice(startIndex, endIndex);
+
+content.innerHTML = displayedItems.join('');
+}
+
+function createPaginationButtons() {
+let nextBtn = null;
+let prevBtn = null;
+
+const numPages = Math.ceil(items.length / ITEM_NUM);
+let currentBtnGroup = Math.ceil(currentPage / BTN_NUM);
+let startGroupIdx = (currentBtnGroup - 1) * BTN_NUM + 1;
+let endGroupIdx = currentBtnGroup * BTN_NUM;
+
+if(endGroupIdx >= numPages) {
+  endGroupIdx = numPages;
+}
+else {
+  // 다음 버튼 생성(페이지 그룹이 하나밖에 없을 때, 마지막 페이지 그룹일 때 다음 버튼 X)
+  nextBtn = document.createElement("button");
+  nextBtn.className = "next-btn";
+  nextBtn.textContent = "다음";
+
+  // 다음 버튼에 이벤트 추가
+  nextBtn.addEventListener("click", function() {
+    currentPage = startGroupIdx + BTN_NUM;
+    displayItems();
+    createPaginationButtons();
+    document.querySelectorAll('.page-btn')[0].setAttribute("style", "background-color: #8976FD; color:white;");
   });
 }
 
-// 페이지 로드 시 페이징 설정
-window.onload = function() {
-  setupPagination();
-  // 첫 번째 페이지의 게시물 로드
-  getPosts(1);
-};
+// 이전 버튼 생성(페이지그룹이 1이 아니라면 이전 버튼 필요)
+if(currentBtnGroup > 1) {
+  prevBtn = document.createElement("button");
+  prevBtn.textContent = "이전";
+  prevBtn.className = "prev-btn";
 
+  // 이전 버튼에 이벤트 추가
+  prevBtn.addEventListener("click", function() {
+    currentPage = startGroupIdx - BTN_NUM;
+    displayItems();
+    createPaginationButtons();
+    document.querySelectorAll('.page-btn')[0].setAttribute("style", "background-color: #8976FD; color:white;");
+  });
+}
+
+let buttonsHtml = '';
+for (let i = startGroupIdx; i <= endGroupIdx; i++) buttonsHtml += `<div class="page-btn">${i}</div>`;
+pagination.innerHTML = buttonsHtml;
+
+if(prevBtn) {
+  pagination.insertBefore(prevBtn, pagination.firstChild);
+}
+if(nextBtn) {
+  pagination.appendChild(nextBtn);
+}
+
+// 버튼 활성화시키고 아이템 다시 뿌려야.
+let pageBtns = document.querySelectorAll('.page-btn');
+pageBtns.forEach((btn) => {
+  btn.addEventListener("click", function() {
+    currentPage = btn.textContent;
+    displayItems();
+
+    // 나머지 버튼 비활성화
+    pageBtns.forEach((btn) => btn.setAttribute("style", "background-color: white; color: #332C5C;") );
+
+    // 버튼 활성화(색상변경)
+    btn.setAttribute("style", "background-color: #8976FD; color:white;");
+    
+  });
+});
+}
+
+displayItems();
+createPaginationButtons();
+document.querySelectorAll('.page-btn')[0].setAttribute("style", "background-color: #8976FD; color:white;");

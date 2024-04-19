@@ -1,26 +1,19 @@
-/* -------------------------------------------- */
-/* footer : start */
-/* -------------------------------------------- */
 footer .outer {
-    border-top: 1px solid #CACACA;
-  }
-  
-  footer .inner {
-    height:50px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  footer span {
-    display: block;
-    margin:0 5px;
-  
-    font: #6E6E6E;
-  }
-  
-  /* -------------------------------------------- */
-  /* footer : end */
-  /* -------------------------------------------- */
+  border-top: 1px solid #CACACA;
+}
+
+footer .inner {
+  height:50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer span {
+  display: block;
+  margin:0 5px;
+
+  font: #6E6E6E;
+}
