@@ -4,17 +4,20 @@ function deleteSuccess(){
 
 let nameStyle = document.querySelector(".profile-name");
 let idStyle = document.querySelector(".profile-id");
+let emailStyle = document.querySelector(".profile-email");
 let phoneStyle = document.querySelector(".profile-phone");
-let addressStyle = document.querySelector(".profile-address");
+// let addressStyle = document.querySelector(".profile-address");
 nameStyle.style.color = "red";
 idStyle.style.color = "red";
+emailStyle.style.color = "red";
 phoneStyle.style.color = "red";
-addressStyle.style.color = "red";
+// addressStyle.style.color = "red";
 
 let pName = document.querySelector(".user-profiled-name");
 let id = document.querySelector(".user-profiled-id");
+let email = document.querySelector(".user-profile-email");
 let phone = document.querySelector(".user-profiled-phone");
-let address =  document.querySelector(".user-profiled-address");
+// let address =  document.querySelector(".user-profiled-address");
 
 // let nameValue = pName.value;
 // let idValue = id.value;
@@ -36,6 +39,13 @@ id.addEventListener("keyup", ()=>{
         idStyle.classList.remove('hide');
     }
 })
+email.addEventListener("keyup", ()=>{
+    if(id.value.length !== 0){
+        emailStyle.classList.add('hide');
+    }else{
+        emailStyle.classList.remove('hide');
+    }
+})
 phone.addEventListener("keyup", ()=>{
     if(phone.value.length !== 0){
         phoneStyle.classList.add('hide');
@@ -43,15 +53,15 @@ phone.addEventListener("keyup", ()=>{
         phoneStyle.classList.remove('hide');
     }
 }) 
-address.addEventListener("keyup", ()=>{
-    if(address.value.length !== 0){
-        addressStyle.classList.add('hide');
-    }else{
-        addressStyle.classList.remove('hide');
-    }
-})
+// address.addEventListener("keyup", ()=>{
+//     if(address.value.length !== 0){
+//         addressStyle.classList.add('hide');
+//     }else{
+//         addressStyle.classList.remove('hide');
+//     }
+// })
 
-let arr = [pName, id, phone, address];
+let arr = [pName, id, email, phone]; //, address
 var off = 0;
 
 function correctButton(){
