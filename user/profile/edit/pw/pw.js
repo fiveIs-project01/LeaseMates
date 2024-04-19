@@ -46,17 +46,32 @@ elPasswordcheck.onkeyup = function(){
 }
 
 // 오류 메세지
-function pwdcheck(){
+// function pwdcheck(){
+//     if(elPasswordcheck.value.length !== 0){
+//         if(elPassword.value !== elPasswordcheck.value){
+//             alert("비밀번호 확인");
+//         }else{
+//             alert("수정되었습니다!");
+//             // 주소로 이동...
+//             window.location.href = "http://127.0.0.1:5500/user/profile/edit/pw_success/pw_success.html";
+//         }
+//     }
+// }
+function pwdCheckOk(){
     if(elPasswordcheck.value.length !== 0){
-        if(elPassword.value !== elPasswordcheck.value){
-            alert("비밀번호 확인");
+        if(strongPassword(elPassword.value)){
+            if(isMatch(elPassword.value, elPasswordcheck.value)){
+                alert("수정되었습니다!");
+                // 주소로 이동...
+                window.location.href = "http://127.0.0.1:5500/user/profile/edit/pw_success/pw_success.html";
+            }else{
+                alert("비밀번호 확인");
+            }
         }else{
-            alert("수정되었습니다!");
-            // 주소로 이동...
-            window.location.href = "http://127.0.0.1:5500/user/profile/edit/pw_success/pw_success.html";
+            alert("비밀번호 확인");
         }
     }
-}
+}   
 
 // 헤더
 // 헤더 파일을 가져와서 헤더 자리에 삽입하는 함수

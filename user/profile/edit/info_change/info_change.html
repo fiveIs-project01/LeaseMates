@@ -24,7 +24,7 @@
                       <a href="../../../list/"><div class="maim--post">작성게시글</div></a>
                       <a href="../info_change/info_change.html"><div class="maim--change">내 정보변경</div></a>
                       <a href="../pw/pw.html"><div class="maim--pwdchang">비밀번호 변경</div></a>
-                      <a href="#"><div class="maim--note">쪽지함</div></a>
+                      <a href="#" onclick="alert('준비중입니다')"><div class="maim--note">쪽지함</div></a>
                   </div>
   
                   <div class="user-profile">
@@ -39,20 +39,21 @@
                           <td><input type="text" class="user-profiled-id"  placeholder="아이디 입력"></td>
                           <td class="profile-id hide">아이디를 입력해주세요</td>
                         </tr>
-                        <!-- <tr>
+                        <tr>
                           <th>이메일</th>
-                          <td><input type="email" class="user-profile-user"  placeholder="이메일 입력"></td>
-                        </tr> -->
+                          <td><input type="email" class="user-profile-email"  placeholder="이메일 입력"></td>
+                          <td class="profile-email hide">이메일를 입력해주세요</td>
+                        </tr>
                         <tr>
                           <th>전화번호</th>
                           <td><input type="tel" class="user-profiled-phone" placeholder="전화번호 입력"></td>
                           <td class="profile-phone hide">전화번호를 입력해주세요</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                           <th>주소</th>
                           <td><input type="text" class="user-profiled-address" placeholder="주소 입력"></td>
                           <td class="profile-address hide">주소를 입력해주세요</td>
-                        </tr>
+                        </tr> -->
                       </table>
                       <div class="chang-delete">
                         <button class="delete-button" onclick="deleteSuccess()">계정 탈퇴</button>
