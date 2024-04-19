@@ -45,7 +45,7 @@ input:focus {outline: none;}
 header .outer {
   position: fixed;
   z-index: 100;
-
+  background-color: #FFFFFF;
   border-bottom: 1px solid #CACACA;
 }
 
@@ -161,14 +161,11 @@ header .inner {
 /* header : end */
 /* -------------------------------------------- */
 
-main {
-  height:1000px;
-  width: 1000px;
-  background-color: #FFFFFF;
-}
 
 main {
-  height:900px;
+  min-height: 900px; /* 스크롤 없으면 최소 메인의 높이가 900으로   */
+  max-height:100%;  /* 화면이 스크롤까지 이용하면 footer 맨아래*/
+  width: 100%;
   background-color: #FFFFFF;
   z-index: 1;
   position: static;
@@ -194,29 +191,11 @@ main {
   padding-top: 50px;
   font-weight: bold;
 }
-/* main .list-container{
-  display: flex;
-  padding-top: 30px;
-} */
 .list-topic-second{
   font-size: 15pt;
   padding-top: 30px;
   color: #8976FD;
 }
-
-/* main .third_topic{
-  font-size: 15pt;
-  padding-left: 20px;
-} */
-/* main .top_cshart_line{
-  padding-left: 150px;
-} */
-
-/* main .horizontal-line01 {
-  border-top: 1px solid black; 
-  margin: 5px 0; 
-  margin-left: 150px;  
-} */
 
 .chart_colum{
   display: flex;
@@ -229,82 +208,40 @@ main {
   color: #8976FD;
   width: 80%;
   text-align: center;
-  /* margin-top: 10px; */
-  /* margin-left: 550px; */
 }
-#title-page{
-  width: 790px;
-}
+
+  
+
+
 .topic_date{
   font-size: 13pt;
   color: #8976FD;
   flex: 1;
   text-align: center;
-  /* margin-top: 10px; */
-  /* margin-left: 350px; */
 }
 .title{
   color:#6E6E6E;
 }
-
-
-/* .horizontal-line02 {
-  border-top: 1px solid #979797; 
-  margin: 15px 0; 
-  margin-left: 150px;  
-} */
-/* .posting_container input[type="checkbox"] {
-  width: 20px; 
-  height: 20px; 
-} */
-.posting-container{
-  display: flex;
-  margin: 10px 0px 10px;
-  /* padding-top: 10px; */
-  /* width: 100%; */
-}
-/* main .posting-container label{
-  font-size: 13pt;
-  color: #332C5C;
-  display: flex;
-} */
 .title-date{
   display: flex;
   width: 100%;
+  border-bottom: #979797 1px solid;
+  padding: 10px 0px 10px;
 }
 .title{
   font-size: 13pt;
   width: 80%;
-  /* padding-right: 10px; */
   padding-left: 10px;
 }
 .date{
   font-size: 13pt;
   flex:1;
   text-align: center;
-  /* padding-left: 620px; */
 }
 
-.horizontal-line{
-  border-top: 1px solid #979797; 
-}
 ul{
   list-style: none;
 }
-
-/* .delete_button {
-  background-color: #FFFFFF;
-  color: #8976FD;
-  padding: 10px 20px;
-  border: 1px solid #8976FD;
-  border-radius: 10px;
-  font-size: 15px;
-  width: 75px; 
-  height: 50px; 
-  font-weight: 600;
-  margin-left: 150px;
-  margin-top: 100px;
-} */
 
 
 
@@ -313,6 +250,7 @@ ul{
   width: 100%;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 .button_container a{
   font-size: 13pt;
@@ -325,15 +263,17 @@ ul{
   color: #979797;
 }
 
-/* .layer_tab{
-  margin-top: 50px; */
-/* } */
+.number-button:hover{
+  color: #8976FD;
+}
 
 /* -------------------------------------------- */
 /* footer : start */
 /* -------------------------------------------- */
 .footer-placeholder{
   margin-bottom: 100px;
+  position: relative;
+  bottom: 0px;
 }
 footer .outer {
   border-top: 1px solid #CACACA;
