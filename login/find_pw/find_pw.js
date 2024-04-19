@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (idInput && nameInput) {
             // 입력이 있을 경우 알림창 출력
-            alert("비밀번호 찾기가 완료되었습니다");
+            alert("입력된 이메일로 임시 비밀번호을 보냈습니다");
             // 로그인 페이지로 이동
             window.location.href = "../index/index.html";
         } else {
             // 입력이 없을 경우 알림창 표시
-            alert("아이디와 이름을 입력하세요");
+            alert("아이디, 이름과 이메일을 입력하세요");
         }
     });
 });

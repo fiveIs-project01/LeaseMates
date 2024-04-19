@@ -163,6 +163,20 @@ main {
   background-color: #FFFFFF;
 }
 
+/* banner */
+
+.banner-img{
+  width: 100vw;
+  height: 230px;   
+
+  
+}
+
+/* .banner-wrap{
+  display: flex;
+  list-style-type: none;
+} */
+
 /* -------------------------------------------- */
 /* footer : start */
 /* -------------------------------------------- */

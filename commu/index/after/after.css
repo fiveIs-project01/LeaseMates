@@ -181,7 +181,7 @@
     list-style-type: none;
   }
 
-  .prev,
+  /* .prev,
   .next{
     position: absolute;
     font-size: 30px;
@@ -196,7 +196,7 @@
 
   .next{
     right: 25px;
-  }
+  } */
 
   /* -------------------------------------------- */
   /* banner : end */

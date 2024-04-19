@@ -7,50 +7,64 @@
     <link rel="stylesheet" href="./regist.css">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script defer src="./regist.js"></script>
+    <script defer src="/temp/header/header.js"></script>
+    <script defer src="/temp/footer/footer.js"></script>
 </head>
 <body>
+    <!-- 헤더 들어갈자리 -->
+  <div id="header-placeholder"></div>
     <main>
-        <div id="signup-container">
-            <h1>회원가입</h1> 
-            <h3>회원이 되어 다양한 후기 및 경험을 공유해 보세요!</h3>
-            <form>
-                    <div id="signup-wrap">
-                        <fieldset>
-                            <legend>아이디</legend>
-                            <input type="text" id="id" placeholder="아이디 입력(6-20자, 영어 또는 숫자만 가능)" required />
-                        </fieldset>
-
-                        <div class="success-message hide">사용할 수 있는 아이디입니다</div>
-                        <div class="failure-message hide">아이디는 6-20글자이어야 합니다</div>
-                        <div class="failure-message2 hide">영어 또는 숫자만 가능합니다</div>
-
-
-                        <fieldset>
-                            <legend>비밀번호</legend>
-                            <input type="password" id="password" placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함)" required/>
-                        </fieldset>
-
-                        <div class="strongPassword-message hide">8글자 이상, 영문, 숫자, 특수문자(@$!%*#?&)를 사용하세요</div>
-
-                        <fieldset>
-                            <legend>비밀번호 확인</legend>
-                            <input type="password" id="password-retype" placeholder="비밀번호 재확인" required />
-                        </fieldset>
-
-                        <div class="mismatch-message hide">비밀번호가 일치하지 않습니다</div>
-                        
-                        <fieldset>
-                            <legend>이름</legend>
-                            <input type="text" id="name" placeholder="이름을 입력해주세요" required/>
-                        </fieldset>
-                        <fieldset>
-                            <legend>전화번호</legend>
-                            <input type="tel" id="phone-number" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" required />
-                        </fieldset>
-                    </div>
-                    <input id="signup--button" type="submit" value="가입하기" />
-            </form>
+        <div class="outer">
+            <div class="inner">
+                <div id="signup-container">
+                    <h1>회원가입</h1> 
+                    <h3>회원이 되어 다양한 후기 및 경험을 공유해 보세요!</h3>
+                    <form>
+                            <div id="signup-wrap">
+                                <fieldset>
+                                    <legend>아이디</legend>
+                                    <input type="text" id="id" placeholder="아이디 입력(6-20자, 영어 또는 숫자만 가능)" required />
+                                </fieldset>
+        
+                                <div class="success-message hide">사용할 수 있는 아이디입니다</div>
+                                <div class="failure-message hide">아이디는 6-20글자이어야 합니다</div>
+                                <div class="failure-message2 hide">영어 또는 숫자만 가능합니다</div>
+        
+        
+                                <fieldset>
+                                    <legend>비밀번호</legend>
+                                    <input type="password" id="password" placeholder="비밀번호 입력(문자, 숫자, 특수문자 포함)" required/>
+                                </fieldset>
+        
+                                <div class="strongPassword-message hide">8글자 이상, 영문, 숫자, 특수문자(@$!%*#?&)를 사용하세요</div>
+        
+                                <fieldset>
+                                    <legend>비밀번호 확인</legend>
+                                    <input type="password" id="password-retype" placeholder="비밀번호 재확인" required />
+                                </fieldset>
+        
+                                <div class="mismatch-message hide">비밀번호가 일치하지 않습니다</div>
+                                
+                                <fieldset>
+                                    <legend>이름</legend>
+                                    <input type="text" id="name" placeholder="이름을 입력해주세요" required/>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>전화번호</legend>
+                                    <input type="tel" id="phone-number" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" required />
+                                </fieldset>
+                                <fieldset>
+                                    <legend>이메일</legend>
+                                    <input type="email" id="email" placeholder="이메일 입력" required />
+                                </fieldset>
+                            </div>
+                            <input id="signup--button" type="submit" value="가입하기" />
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
+    <!-- footer 들어갈 자리 -->
+  <div id="footer-placeholder"></div>
 </body>
 </html>
