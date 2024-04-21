@@ -25,30 +25,6 @@ body {
 a {text-decoration: none;}
 input:focus {outline: none;}
 
-main {
-  padding-top:60px;
-}
-
-/* ---유저 로그인--- */
-.header--right-user{
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 10px;
-  color: #8976FD;
-  margin-left: 30px;
-}
-
-
-/* banner */
-.banner-img{
-  width: 100vw;
-  height: 230px;   
-}
-
 .banner-container{
   width: 100wh;
   height: 200px;
@@ -58,9 +34,8 @@ main {
 
 .detail-container{
   padding-top: 20px;
-  height: max-content;  
+  height: max-content;
   border-bottom: 0.2px solid #CACACA;
-
 }
 
 .theme-title{

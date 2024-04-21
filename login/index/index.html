@@ -3,44 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaseMates</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>LeaseMates: 임차인들을 위한 정보공유공간</title>
+    <link rel="icon" href="/img/favicon.ico">
 
+    <link rel="stylesheet" href="./index.css">
     <script defer src="./index.js"></script>
-    <script defer src="/temp/footer/footer.js"></script>
-    <script defer src="/temp/header/header.js"></script>
+
+    <script type="module" src="/temp/header/before_login/add.js"></script>
+    <script type="module" src="/temp/footer/add.js"></script>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
 <body>
-    <!-- 헤더 들어갈자리 -->
   <div id="header-placeholder"></div>
 
     <main>
-        <div class="outer">
-            <div class="inner">
-                <div id="index-container">
-                    <h1>로그인</h1>
-                    <form>
-                        <fieldset>
-                            <input type="text" id="id" placeholder="아이디" required/>
-                            <p id="idResult"></p>
-                        </fieldset>
-                        <fieldset>
-                            <input type="password" id="password" placeholder="비밀번호" required/>
-                            <p id="pwResult"></p>
-                        </fieldset>
-                        <input type="button" class="login--button" onclick="login();" value="로그인"/>
-                        <br>
-                        <button class="signup--button">회원가입</button>
-                        <br>
-                        <button class="find-pw--button">비밀번호 찾기</button>
-                    </form>
+        <section class="login_form">
+            <div class="outer">
+                <div class="inner">
+
+                    <div id="index-container">
+                        <h1>로그인</h1>
+                        <form>
+                            <fieldset>
+                                <input type="text" id="id" placeholder="아이디" required/>
+                                <p id="idResult"></p>
+                            </fieldset>
+                            <fieldset>
+                                <input type="password" id="password" placeholder="비밀번호" required/>
+                                <p id="pwResult"></p>
+                            </fieldset>
+                            <input type="button" class="login--button" onclick="login();" value="로그인"/>
+                            <br>
+                            <button class="signup--button">회원가입</button>
+                            <br>
+                            <button class="find-pw--button">비밀번호 찾기</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <!-- footer 들어갈 자리 -->
+
   <div id="footer-placeholder"></div>
 </body>
 </html>

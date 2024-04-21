@@ -1,69 +1,61 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: pretendard;
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard";
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
-  .outer {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFFFFF;
-  }
-  
-  .inner {
-    width: 1000px;
-  }
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  a {text-decoration: none;}
-  
-  input:focus {outline: none;}
+.outer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  main {
-    min-height: 900px; /* 스크롤 없으면 최소 메인의 높이가 900으로   */
-    max-height:100%;  /* 화면이 스크롤까지 이용하면 footer 맨아래*/
-    width: 100%;
-    background-color: #FFFFFF;
-    z-index: 1;
-    position: static;
-    flex:1
-  }
+.inner {
+  width: 1000px;
+}
+
+a {text-decoration: none;}
+input:focus {outline: none;}
+
+.terms_of_use .inner {
+  display: flex;
+  justify-content: center;
+}
 
 #terms-container{
-    height: 649px;
-    width: 680px;
-    margin: auto;
-    margin-top: 100px;
-
-    background-color: #F5F3FF;
+  margin: 50px 0;
+  height: 649px;
+  width: 680px;
+  background-color: #F5F3FF;
 }
 
 form{
-    background-color: #F5F3FF;
-    height: 500px; 
-    margin: 30px;
+  height: 500px; 
+  margin: 30px;
 }
 
 h1{
-    color: #8976FD;
-    margin: 0 0 15px 0;
+  font-size: 30px;
+  color: #8976FD;
+  margin: 0 0 15px 0;
 }
 
 h3{
-    color: #332C5C;
-    font-weight: 500;
+  font-size: 15px;
+  color: #332C5C;
+  font-weight: 500;
 }
 
 h1,h3{
-    position: relative;
-    top: 30px;
-    left: 30px;
+  position: relative;
+  top: 30px;
+  left: 30px;
 }
 
 #terms-wrap{
@@ -81,13 +73,13 @@ label{
 }
 
 .terms-box{
-    margin: 15px;
-    padding: 5px;
-    background-color: #ffffff;
-    font-size: 15px;
-    color: #979797;
-    border-radius: 10px;
-    font-weight: 600;
+  margin: 15px;
+  padding: 5px;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #979797;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 #terms-button{
@@ -99,179 +91,9 @@ label{
     border-radius: 10px;
 }
 
-a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #979797;
-    font-weight: 600;
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #979797;
+  font-weight: 600;
 }
-
-/* -------------------------------------------- */
-  /* header : start */
-  /* -------------------------------------------- */
-  
-  header .outer {
-    position: fixed;
-    z-index: 100;
-  
-    border-bottom: 1px solid #CACACA;
-  }
-  
-  header .inner {
-    /* background-color: red; */
-    height:60px;
-  
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .header--left,
-  .header--right {
-    /* background-color: yellow; */
-    display: flex;
-    align-items: center;
-  }
-  
-  .header--left .e {
-    margin-right: 30px;
-  }
-  
-  .header--right .e {
-    margin-left: 15px;
-  }
-  
-  
-  .header--left-logo {
-    /* font-family: "Bebas Neue"; */
-    color:#8976FD;
-    font-weight: bold;
-    font-size:25px;
-  }
-  
-  .header--left-community,
-  .header--left-barter,
-  .header--left-sharehouse {
-    color: #332C5C;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .header--left-community {
-    color:#8976FD;
-  }
-  
-  .header--left-community:hover,
-  .header--left-sharehouse:hover {
-    color:#8976FD;
-  }
-  
-  .header--right-search {
-    width: 200px;
-    height: 30px;
-  
-    position: relative;
-  
-    border: 1px solid #8976FD;
-    border-radius: 50px;
-  }
-  
-  .header--right-search span {
-    color:#8976FD;
-    margin-left:7px;
-    line-height: 31px;
-  
-    cursor: pointer;
-  }
-  
-  .header--right-search input {
-    position: absolute;
-    top:25%;
-    right:10px;
-  
-    height:15px;
-    width:150px;
-  
-    border:0;
-  }
-
-  .header--right-search span {
-    color:#8976FD;
-    margin-left:7px;
-    line-height: 31px;
-  
-    cursor: pointer;
-  }
-
-  .header--right-search input::placeholder{
-    font-size: 10px;
-  }
-  
-  .header--right-login,
-  .header--right-signup {
-    height:30px;
-    line-height: 30px;
-    padding: 0 20px;
-    border:1px solid #8976FD;
-    font-size: 10px;
-    font-weight: bold;
-  }
-  
-  .header--right-login {
-    background-color: #8976FD;
-    color: #FFFFFF;
-  }
-  
-  .header--right-signup {
-    color: #332C5C;
-  }
-
-  /* ---유저 로그인--- */
-.header--right-user{
-    height:30px;
-    line-height: 30px;
-    padding: 0 20px;
-    border:1px solid #8976FD;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 10px;
-    color: #8976FD;
-    margin-left: 30px;
-  }
-  
-  /* -------------------------------------------- */
-  /* header : end */
-  /* -------------------------------------------- */
-
-/* -------------------------------------------- */
-  /* footer : start */
-  /* -------------------------------------------- */
-  footer .outer {
-    border-top: 1px solid #CACACA;
-  }
-  
-  footer .inner {
-    height:50px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  footer span {
-    display: block;
-    margin:0 5px;
-  
-    font: #6E6E6E;
-    font-size: 10px;
-  }
-
-  .footer-placehoder{
-    position: relative;
-    top: 0px;
-  }
-  
-  /* -------------------------------------------- */
-  /* footer : end */
-  /* -------------------------------------------- */
-

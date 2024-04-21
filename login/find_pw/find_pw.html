@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaseMates</title>
-    <link rel="stylesheet" href="./find_pw.css">            
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <title>LeaseMates: 임차인들을 위한 정보공유공간</title>
+    <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="./find_pw.css">    
     <script defer src="./find_pw.js"></script>
-    <script defer src="/temp/footer/footer.js"></script>
-    <script defer src="/temp/header/header_login.js"></script>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <script type="module" src="/temp/header/before_login/add.js"></script>
+    <script type="module" src="/temp/footer/add.js"></script>
 </head>
 <body>
-    <!-- 헤더 들어갈자리 -->
-  <div id="header-login-placeholder"></div>
+  <div id="header-placeholder"></div>
+
     <main>
-        <div class="outer">
-            <div class="inner">
-                <div id="find-pw-container">
-                    <form>
-                        <h1>비밀번호 찾기</h1>
-                            <div class="find-pw-wrap">
-                                <fieldset>
-                                    <input type="text" id="id" placeholder="아이디" required />
-                                </fieldset>
-                                <fieldset>
-                                    <input type="text" id="name" placeholder="이름" required/>
-                                </fieldset>
-                                <fieldset>
-                                    <input type="text" id="email" placeholder="이메일" required/>
-                                </fieldset>
-                                <button class="find-pw-button" >비밀번호 찾기</button>
-                            </div>
-                    </form>
+        <section class="find_pw_form">
+            <div class="outer">
+                <div class="inner">
+
+                    <div id="find-pw-container">
+                        <form>
+                            <h1>비밀번호 찾기</h1>
+                                <div class="find-pw-wrap">
+                                    <fieldset>
+                                        <input type="text" id="id" placeholder="아이디" required />
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type="text" id="name" placeholder="이름" required/>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type="text" id="email" placeholder="이메일" required/>
+                                    </fieldset>
+                                    <button class="find-pw-button" >비밀번호 찾기</button>
+                                </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <!-- footer 들어갈 자리 -->
+
   <div id="footer-placeholder"></div>
 </body>
 </html>

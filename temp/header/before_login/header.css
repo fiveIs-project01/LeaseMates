@@ -22,17 +22,21 @@
   }
   
   a {text-decoration: none;}
-  
   input:focus {outline: none;}
 
-  /* -------------------------------------------- */
+/* -------------------------------------------- */
 /* header : start */
 /* -------------------------------------------- */
+header {
+  /* fixed 속성 주는 바람에 헤더와 main이 겹쳐지는데 방지하기 위함 */
+  height: 60px;
+}
 
 header .outer {
-    position: fixed;
+  position: fixed;
     z-index: 100;
-  
+
+background-color: #FFFFFF;
     border-bottom: 1px solid #CACACA;
   }
   
@@ -144,13 +148,3 @@ header .outer {
   color: #8976FD;
   margin-left: 30px;
 }
-  
-  /* -------------------------------------------- */
-  /* header : end */
-  /* -------------------------------------------- */
-  
-  /* main {
-    height:1000px;
-    background-color: #FFFFFF;
-  } */
-

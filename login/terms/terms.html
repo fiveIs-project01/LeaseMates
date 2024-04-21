@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeaseMates</title>
+    <title>LeaseMates: 임차인들을 위한 정보공유공간</title>
+    <link rel="icon" href="/img/favicon.ico">
+    
     <link rel="stylesheet" href="./terms.css">
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script defer src="./terms.js"></script>
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script defer src="/temp/footer/footer.js" ></script>
-    <script defer src="/temp/header/header.js" ></script>
+
+    <script type="module" src="/temp/header/before_login/add.js"></script>
+    <script type="module" src="/temp/footer/add.js"></script>
 </head>
 <body>
-    <!-- 헤더 들어갈자리 -->
   <div id="header-placeholder"></div>
     <main>
+        <section class="terms_of_use">
         <div class="outer">
             <div class="inner">
+
                 <div id="terms-container">
                     <h1>회원가입</h1> 
                     <h3>이용약관 동의</h3>
@@ -61,10 +66,11 @@
                             <input type="button" id="terms-button" value="다음"/>
                     </form>
                 </div>
+
             </div>
         </div>
+        </section>
     </main>
-    <!-- footer 들어갈 자리 -->
   <div id="footer-placeholder"></div>
 </body>
 </html>
