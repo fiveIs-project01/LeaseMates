@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LeaseMate</title>
-  <script src="detail.js"></script>
-  <script type="module" src="edit_cmt.js"></script>
-
+  <title>LeaseMates: 임차인들을 위한 정보공유공간</title>
+    <link rel="icon" href="/img/favicon.ico">
+    
   <link rel="stylesheet" href="./detail.css">
-  <link rel="stylesheet" href="../../../temp/header/header.css">
-  <link rel="stylesheet" href="../../../temp/footer/footer.css">
   <link rel="stylesheet" href="./edit_cmt.css">
+  <script type="module" src="edit_cmt.js"></script>
+  <script src="detail.js"></script>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   
-  <script defer src="../../../temp/header/header_login.js"></script>
-  <script defer src="../../../temp/footer/footer.js"></script>
+  <script type="module" src="/temp/header/after_login/add.js"></script>
+  <script type="module" src="/temp/footer/add.js"></script>
+  <script type="module" src="/temp/main_banner/add.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -22,13 +23,10 @@
 
 </head>
 <body>
-  <!-- 헤더 들어갈자리 -->
-  <div id="header-login-placeholder"></div>
+  <div id="header-placeholder"></div>
 
   <main>
-    <!-- 메인 배너 -->
-    <img class="banner-img" src="/img/commu/banner.png" alt="" />
-
+    <div id="main-banner"></div>
 
     <div class="outer">
       <div class="inner">

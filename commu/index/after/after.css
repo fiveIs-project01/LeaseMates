@@ -23,41 +23,7 @@ body {
 }
 
 a {text-decoration: none;}
-
 input:focus {outline: none;}
-
-/* ---유저 로그인--- */
-.header--right-user{
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 10px;
-  color: #8976FD;
-  margin-left: 30px;
-}
-
-
-main {
-  /* 아마 js로 추가해서? main이 top:0; 부터 시작하게 됨. 방지하기 위해 header만큼 공간을 줌 */
-  padding-top: 60px;
-}
-
-/* -------------------------------------------- */
-/* banner : start */
-/* -------------------------------------------- */
-
-.banner-img{
-  width: 100vw;
-  height: 240px;
-  background-color: #C4E4F1;
-}
-
-/* -------------------------------------------- */
-/* banner : end */
-/* -------------------------------------------- */
 
 /* -------------------------------------------- */
 /* .before-list-container : start */
@@ -203,31 +169,3 @@ font-variation-settings:
 
   cursor: pointer;
 }
-
-  
-  /* -------------------------------------------- */
-  /* footer : start */
-  /* -------------------------------------------- */
-  /* footer .outer {
-    border-top: 1px solid #CACACA;
-  }
-  
-  footer .inner {
-    height:50px;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  footer span {
-    display: block;
-    margin:0 5px;
-  
-    font: #6E6E6E;
-  }
-   */
-  /* -------------------------------------------- */
-  /* footer : end */
-  /* -------------------------------------------- */

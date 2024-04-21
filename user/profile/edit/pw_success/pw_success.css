@@ -21,146 +21,7 @@ body {
 }
 
 a {text-decoration: none;}
-
 input:focus {outline: none;}
-
-/* -------------------------------------------- */
-/* header : start */
-/* -------------------------------------------- */
-
-header .outer {
-  position: fixed;
-  z-index: 100;
-  background-color: #FFFFFF;
-
-  border-bottom: 1px solid #CACACA;
-}
-
-header .inner {
-  /* background-color: red; */
-  height:60px;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.header--left,
-.header--right {
-  /* background-color: yellow; */
-  display: flex;
-  align-items: center;
-}
-
-.header--left .e {
-  margin-right: 30px;
-}
-
-.header--right .e {
-  margin-left: 15px;
-}
-
-
-.header--left-logo {
-  /* font-family: "Bebas Neue"; */
-  color:#8976FD;
-  font-weight: bold;
-  font-size:25px;
-}
-
-.header--left-community,
-.header--left-barter,
-.header--left-sharehouse {
-  color: #332C5C;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.header--left-community {
-  color:#8976FD;
-}
-
-.header--left-barter:hover,
-.header--left-sharehouse:hover {
-  color:#8976FD;
-}
-
-.header--right-search {
-  width: 200px;
-  height: 30px;
-
-  position: relative;
-
-  border: 1px solid #8976FD;
-  border-radius: 50px;
-}
-
-.header--right-search span {
-  color:#8976FD;
-  margin-left:7px;
-  line-height: 31px;
-
-  cursor: pointer;
-}
-
-.header--right-search input {
-  position: absolute;
-  top:25%;
-  right:10px;
-
-  height:15px;
-  width:150px;
-
-  border:0;
-}
-
-.header--right-login,
-.header--right-signup {
-  height:30px;
-  line-height: 30px;
-  padding: 0 20px;
-  border:1px solid #8976FD;
-  font-size: 10px;
-  font-weight: bold;
-}
-
-.header--right-login {
-  background-color: #8976FD;
-  color: #FFFFFF;
-}
-
-.header--right-signup {
-  color: #332C5C;
-}
-
- /* ---유저 로그인--- */
-.header--right-user{
-height:30px;
-line-height: 30px;
-padding: 0 20px;
-border:1px solid #8976FD;
-font-size: 12px;
-font-weight: bold;
-border-radius: 10px;
-color: #8976FD;
-margin-left: 30px;
-}
-
-
-/* -------------------------------------------- */
-/* header : end */
-/* -------------------------------------------- */
-
-main {
-  height:900px;
-  background-color: #FFFFFF;
-  z-index: 1;
-  position: static;
-  flex:1
-}
-
- main .outer{
-  padding-top: 61px;
-}
 
 main .inner{
   display: flex;
@@ -168,7 +29,7 @@ main .inner{
   align-items: center;
 }
 .secret-Pageok{
-  margin: 40px;
+  margin: 30px 0;
   border: 1px solid #8976FD;
   border-radius: 10px;
   width: 500px;
@@ -205,6 +66,8 @@ main .inner{
 }
 
 .inner button{
+  margin-bottom:10px;
+
   font-size: 20px;
   color: #FFFFFF;
   border-radius: 10px;
@@ -212,34 +75,3 @@ main .inner{
   background-color: #8976FD;
   padding: 10px 60px;
 }
-
-/* -------------------------------------------- */
-/* footer : start */
-/* -------------------------------------------- */
-footer{
-  z-index: 2;
-  position: relative;
-  /* min-height: 50px; */
-}
-footer .outer {
-  border-top: 1px solid #CACACA;
-}
-
-footer .inner {
-  height:50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-footer span {
-  display: block;
-  margin:0 5px;
-
-  font: #6E6E6E;
-}
-
-/* -------------------------------------------- */
-/* footer : end */
-/* -------------------------------------------- */
